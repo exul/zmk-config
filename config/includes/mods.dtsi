@@ -34,5 +34,29 @@
       hold-trigger-key-positions = <KEYS_L>;
       hold-trigger-on-release;
     };
+
+
+    ltl: layer_toggle_left {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <HM_TAPPING_TERM_MS>;
+      quick-tap-ms = <HM_QUICK_TAP_MS>;
+      bindings = <&mo>, <&kp>;
+
+      hold-trigger-key-positions = <KEYS_R>;
+    };
+
+    ltr: layer_toggle_right {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <HM_TAPPING_TERM_MS>;
+      quick-tap-ms = <HM_QUICK_TAP_MS>;
+	  require-prior-idle-ms = <HM_REQUIRE_PRIOR_IDLE_MS>;
+      bindings = <&mo>, <&kp>;
+
+      hold-trigger-key-positions = <KEYS_L>;
+    };
   };
 };

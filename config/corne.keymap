@@ -21,12 +21,6 @@
     chain-length = <27>;
 };
 
-&lt {
-  flavor = "balanced";
-  tapping-term-ms = <250>;
-  quick-tap-ms = <175>;
-};
-
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -43,7 +37,7 @@
      &kp TAB       &kp X         &kp V         &kp L         &kp C         &kp W                      &kp K         &kp H         &kp G         &kp F         &kp Q         &kp Y
      &mo 1         &hml LGUI U   &hml LALT I   &hml LCTRL A  &hml LSHFT E  &kp O                      &kp S         &hmr RSHFT N  &hmr RCTRL R  &hmr RALT T   &hmr RGUI D   &mo 1
      &kp LSHFT     &kp RA(Y)     &kp RA(P)     &kp RA(Q)     &kp P         &kp Z                      &kp B         &kp M         &kp COMMA     &kp DOT       &kp J         &kp RSHFT
-                                               &kp LCTRL     &lt 2 BKSP    &lt 3 ESC                  &lt 3 RET     &lt 2 SPC     &kp RCTRL
+                                               &kp LCTRL     &ltl 2 BKSP   &ltl 3 ESC                 &ltr 3 RET    &ltr 2 SPC    &kp RCTRL
                         >;
                 };
 
@@ -59,7 +53,7 @@
      &kp TAB       &kp RA(N2)    &kp UNDER     &kp LBKT      &kp RBKT      &kp CARET                  &kp EXCL      &kp LT        &kp GT        &kp EQUAL     &kp AMPS      &kp AT
      &mo 1         &kp BSLH      &kp FSLH      &kp LBRC      &kp RBRC      &kp ASTRK                  &kp QMARK     &kp LPAR      &kp RPAR      &kp MINUS     &kp COLON     &mo 1
      &kp LSHFT     &kp HASH      &kp DLLR      &kp PIPE      &kp TILDE     &kp GRAVE                  &kp PLUS      &kp PRCNT     &kp DQT       &kp SQT       &kp SEMI      &kp RSHFT
-                                               &kp LCTRL     &lt 2 BKSP    &lt 3 ESC                  &lt 3 RET     &lt 2 SPC     &kp RCTRL
+                                               &kp LCTRL     &ltl 2 BKSP   &ltl 3 ESC                 &ltr 3 RET    &ltr 2 SPC    &kp RCTRL
                         >;
                 };
 
@@ -75,7 +69,7 @@
      &kp TAB       &kp LS(TAB)   &kp HOME      &kp UP        &kp PG_UP     &kp TAB                    &kp KP_DIVIDE   &kp N7      &kp N8        &kp N9        &kp KP_MINUS  &kp AT
      &mo 1         &kp BKSP      &kp LEFT      &kp DOWN      &kp RIGHT     &kp DEL                    &kp KP_MULTIPLY &kp N4      &kp N5        &kp N6        &kp KP_PLUS   &mo 1
      &kp LSHFT     &kp SPC       &kp END       &sk LSFT      &kp PG_DN     &kp SPC                    &kp COMMA       &kp N1      &kp N2        &kp N3        &kp DOT       &kp RSHFT
-                                               &kp LCTRL     &lt 2 BKSP    &lt 3 ESC                  &lt 3 RET       &kp N0      &kp RCTRL
+                                               &kp LCTRL     &ltl 2 BKSP   &ltl 3 ESC                 &ltr 3 RET      &kp N0      &kp RCTRL
                         >;
                 };
 
@@ -91,7 +85,7 @@
      &bt BT_SEL 0  &kp X         &kp V         &kp L         &kp C         &kp W                      &kp K         &kp F9        &kp F10        &kp F11       &kp F12       &ext_power EP_TOG
      &bt BT_SEL 1  &hml LGUI U   &hml LALT I   &hml LCTRL A  &hml LSHFT E  &kp O                      &kp S         &kp F5        &kp F6         &kp F7        &kp F8        &mo 1
      &bt BT_SEL 2  &kp RA(Q)     &kp RA(P)     &kp RA(Y)     &kp P         &kp Z                      &kp B         &kp F1        &kp F2         &kp F3        &kp F4        &kp RSHFT
-                                               &kp LCTRL     &lt 2 BKSP    &lt 3 ESC                  &lt 3 RET     &lt 2 SPC     &kp RCTRL
+                                               &kp LCTRL     &ltl 2 BKSP   &ltl 3 ESC                 &ltr 3 RET    &ltr 2 SPC    &kp RCTRL
                         >;
                 };
         };
