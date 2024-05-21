@@ -15,6 +15,7 @@
 #define FUNCTIONS 3
 
 #include "includes/mods.dtsi"
+#include "includes/mouse.dtsi"
 
 
 &led_strip {
@@ -82,9 +83,9 @@
 // |     BT3     |             |             |             |             |             |            |             |     F1      |     F2      |    F3       |     F4      |    SHIFT    |
 //                                           |    CTRL     |  LT2 BAKSP  |   LT3 ESC   |            |   LT3 ENT   |   LT2 SPC   |    CTRL     |
 
-     &bt BT_SEL 0  &kp X         &kp V         &kp L         &kp C         &kp W                      &kp K         &kp F9        &kp F10        &kp F11       &kp F12       &ext_power EP_TOG
-     &bt BT_SEL 1  &hml LGUI U   &hml LALT I   &hml LCTRL A  &hml LSHFT E  &kp O                      &kp S         &kp F5        &kp F6         &kp F7        &kp F8        &mo 1
-     &bt BT_SEL 2  &kp RA(Q)     &kp RA(P)     &kp RA(Y)     &kp P         &kp Z                      &kp B         &kp F1        &kp F2         &kp F3        &kp F4        &kp RSHFT
+     &bt BT_SEL 0  &kp X         WH_LEFT       MS_UP         WH_UP         &kp W                      &kp K         &kp F9        &kp F10        &kp F11       &kp F12       &ext_power EP_TOG
+     &bt BT_SEL 1  &mkp LCLK     MS_LEFT       MS_DOWN       MS_RIGHT      &mkp RCLK                  &kp S         &kp F5        &kp F6         &kp F7        &kp F8        &mo 1
+     &bt BT_CLR    &kp RA(Q)     WH_RIGHT      &mkp MCLK     WH_DOWN       &kp Z                      &kp B         &kp F1        &kp F2         &kp F3        &kp F4        &kp RSHFT
                                                &kp LCTRL     &ltl 2 BKSP   &ltl 3 ESC                 &ltr 3 RET    &ltr 2 SPC    &kp RCTRL
                         >;
                 };
