@@ -13,6 +13,7 @@
 #define SYMBOLS 1
 #define NVN 2
 #define FUNCTIONS 3
+#define GAMING 4
 
 #include "includes/mods.dtsi"
 #include "includes/mouse.dtsi"
@@ -36,6 +37,8 @@
 		COMBO(navnum_layer_right, &tog NVN, 40 35)
 		COMBO(functions_layer_left, &tog FUNCTIONS, 37 12)
 		COMBO(functions_layer_right, &tog FUNCTIONS, 40 23)
+		COMBO(gaming_layer_left, &tog GAMING, 36 24)
+		COMBO(gaming_layer_right, &tog GAMING, 41 35)
 	};
 
     keymap {
@@ -102,6 +105,23 @@
      &bt BT_SEL 1  &mkp LCLK     MS_LEFT       MS_DOWN       MS_RIGHT      &mkp RCLK                  &kp C_MUTE    &kp F5        &kp F6         &kp F7        &kp F8        &mo 1
      &bt BT_CLR    &kp RA(Q)     WH_RIGHT      &mkp MCLK     WH_DOWN       &kp Z                      &kp C_VOL_DN  &kp F1        &kp F2         &kp F3        &kp F4        &kp RSHFT
                                                &kp LCTRL     &ltl 2 BKSP   &ltl 3 ESC                 &ltr 3 RET    &ltr 2 SPC    &kp RCTRL
+            >;
+        };
+
+
+        gaming_layer {
+            label = "Gaming";
+            bindings = <
+// --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// |     TAB     |      Q      |      W      |      E      |      R      |      T      |            |      Z      |      U      |      I      |      O      |      P      |      ü      |
+// |     LS2     |      A      |      S      |      D      |      F      |      G      |            |      H      |      J      |      K      |      L      |      ö      |      ä      |
+// |    SHIFT    |      Y      |      X      |      C      |      V      |      B      |            |      N      |      M      |      ,      |      .      |      -      |    SHIFT    |
+//                                           |    CTRL     |  LT2 BAKSP  |   LT3 ESC   |            |   LT3 ENT   |   LT2 SPC   |    CTRL     |
+
+     &kp TAB       &kp Q         &kp W         &kp E         &kp R         &kp T                      &kp Z         &kp U         &kp I         &kp O         &kp P         &kp RA(Y)
+     &mo 2         &kp A         &kp S         &kp D         &kp F         &kp G                      &kp H         &kp J         &kp K         &kp L         &kp RA(P)     &kp RA(Q)
+     &kp LSHFT     &kp Y         &kp X         &kp C         &kp V         &kp B                      &kp N         &kp M         &kp COMMA     &kp DOT       &kp MINUS     &kp RSHFT
+                                               &kp LCTRL     &kp SPC       &kp ESC                    &kp RET       &kp BKSP      &kp RCTRL
             >;
         };
 	};
