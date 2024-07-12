@@ -53,9 +53,9 @@
 // |    SHIFT    |      Ü      |      Ö      |      Ä      |      P      |      Z      |            |      B      |      M      |      ,      |      .      |      J      |    SHIFT    |
 //                                           |    CTRL     |   LT2 BKSP  |   LT3 ESC   |            |  LT3 ENT    |   LT2 SPC   |    CTRL     |
 
-     &kp PSCRN     &kp X         &kp V         &kp L         &kp C         &kp W                      &kp K         &kp H         &kp G         &kp F         &kp Q         &kp PSCRN
-     &ltl 1 TAB    &hml LGUI U   &hml LALT I   &hml LCTRL A  &hmlq LSHFT E &kp O                      &kp S         &hmrq RSHFT N &hmr RCTRL R  &hmr RALT T   &hmr RGUI D   &ltr 1 Y
-     &kp PSCRN     &kp RA(Y)     &kp RA(P)     &kp RA(Q)     &kp P         &kp Z                      &kp B         &kp M         &kp COMMA     &kp DOT       &kp J         &kp PSCRN
+     &kp TAB       &kp X         &kp V         &kp L         &kp C         &kp W                      &kp K         &kp H         &kp G         &kp F         &kp Q         &kp Y
+     &mo 1         &hml LGUI U   &hml LALT I   &hml LCTRL A  &hmlq LSHFT E &kp O                      &kp S         &hmrq RSHFT N &hmr RCTRL R  &hmr RALT T   &hmr RGUI D   &mo 1
+     &kp LSHFT     &kp RA(Y)     &kp RA(P)     &kp RA(Q)     &kp P         &kp Z                      &kp B         &kp M         &kp COMMA     &kp DOT       &kp J         &kp RSHFT
                                                &kp LCTRL     &ltl 2 BKSP   &ltl 3 ESC                 &ltr 3 RET    &ltr 2 SPC    &kp RCTRL
             >;
         };
@@ -67,11 +67,11 @@
 // |     TAB     |      ²      |      _      |      [      |      ]      |      ^      |            |      !      |      <      |      >      |      =      |      &      |      @      |
 // |     LS1     |      \      |      /      |      {      |      }      |      *      |            |      ?      |      (      |      )      |      -      |      :      |     LS1     |
 // |    SHIFT    |      #      |      $      |      |      |      ~      |      `      |            |      +      |      %      |      "      |      '      |      ;      |    SHIFT    |
-//                                           |    CTRL     |   LT2 BKSP  |   LT3 ESC   |            |  LT3 ENT    |   LT2 SPC   |    CTRL     |
+//                                           |    CTRL     |   LT2 BKSP  |   LT3 ESC   |            |   LT3 ENT   |   LT2 SPC   |    CTRL     |
 
-     &kp PSCRN     &kp RA(N2)    &kp UNDER     &kp LBKT      &kp RBKT      &kp CARET                  &kp EXCL      &kp LT        &kp GT        &kp EQUAL     &kp AMPS      &kp PSCRN
-     &ltl 1 TAB    &kp BSLH      &kp FSLH      &kp LBRC      &kp RBRC      &kp ASTRK                  &kp QMARK     &kp LPAR      &kp RPAR      &kp MINUS     &kp COLON     &ltr 1 AT
-     &kp PSCRN     &kp HASH      &kp DLLR      &kp PIPE      &kp TILDE     &kp GRAVE                  &kp PLUS      &kp PRCNT     &kp DQT       &kp SQT       &kp SEMI      &kp PSCRN
+     &kp TAB       &kp RA(N2)    &kp UNDER     &kp LBKT      &kp RBKT      &kp CARET                  &kp EXCL      &kp LT        &kp GT        &kp EQUAL     &kp AMPS      &kp AT
+     &mo 1         &kp BSLH      &kp FSLH      &kp LBRC      &kp RBRC      &kp ASTRK                  &kp QMARK     &kp LPAR      &kp RPAR      &kp MINUS     &kp COLON     &mo 1
+     &kp LSHFT     &kp HASH      &kp DLLR      &kp PIPE      &kp TILDE     &kp GRAVE                  &kp PLUS      &kp PRCNT     &kp DQT       &kp SQT       &kp SEMI      &kp RSHFT
                                                &kp LCTRL     &ltl 2 BKSP   &ltl 3 ESC                 &ltr 3 RET    &ltr 2 SPC    &kp RCTRL
                         >;
         };
@@ -85,9 +85,9 @@
 // |    SHIFT    |     SPC     |    END      |  CAPS WORD  |  PAGE_DOWN  |     ENT     |            |      ,      |      1      |      2      |      3      |      .      |    SHIFT    |
 //                                           |    CTRL     |   LT2 BKSP  |   LT3 ESC   |            |   LT3 ENT   |      0      |    CTRL     |
 
-     &kp PSCRN     &kp LS(TAB)   &kp HOME      &kp UP        &kp PG_UP     &kp TAB                    &kp KP_DIVIDE   &kp N7      &kp N8        &kp N9        &kp KP_MINUS  &kp PSCRN
-     &ltl 1 TAB    &kp BKSP      &kp LEFT      &kp DOWN      &kp RIGHT     &kp DEL                    &kp KP_MULTIPLY &kp N4      &kp N5        &kp N6        &kp KP_PLUS   &ltr 1 AT
-     &kp PSCRN     &kp SPC       &kp END       &caps_word     &kp PG_DN     &kp RET                    &kp COMMA       &kp N1      &kp N2        &kp N3        &kp DOT       &kp PSCRN
+     &kp TAB       &kp LS(TAB)   &kp HOME      &kp UP        &kp PG_UP     &kp TAB                    &kp KP_DIVIDE   &kp N7      &kp N8        &kp N9        &kp KP_MINUS  &kp AT
+     &mo 1         &kp BKSP      &kp LEFT      &kp DOWN      &kp RIGHT     &kp DEL                    &kp KP_MULTIPLY &kp N4      &kp N5        &kp N6        &kp KP_PLUS   &mo 1
+     &kp LSHFT     &kp SPC       &kp END       &caps_word    &kp PG_DN     &kp RET                    &kp COMMA       &kp N1      &kp N2        &kp N3        &kp DOT       &kp RSHFT
                                                &kp LCTRL     &ltl 2 BKSP   &ltl 3 ESC                 &ltr 3 RET      &kp N0      &kp RCTRL
 	        >;
         };
