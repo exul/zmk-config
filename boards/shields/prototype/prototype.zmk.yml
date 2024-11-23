@@ -1,0 +1,12 @@
+file_format: "1"
+id: prototype
+name: prototype
+type: shield
+url: https://github.com/exul/prototype
+requires: [pro_micro]
+features:
+  - keys
+  - display
+siblings:
+  - prototype_left
+  - prototype_right

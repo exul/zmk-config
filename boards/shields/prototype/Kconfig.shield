@@ -1,0 +1,5 @@
+config SHIELD_PROTOTYP_LEFT
+    def_bool $(shields_list_contains,prototype_left)
+
+config SHIELD_PROTOTYPE_RIGHT
+    def_bool $(shields_list_contains,prototype_right)
