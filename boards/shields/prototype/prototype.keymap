@@ -24,8 +24,8 @@
 // |    SHIFT    |      Ü      |      Ö      |      Ä      |      P      |      Z      |            |      B      |      M      |      ,      |      .      |      J      |    SHIFT    |
 //                                           |    CTRL     |   LT3 ESC   |   LT2 BKSP  |            |  LT2 SPC    |   LT3 RET   |    CTRL     |
 
-     &kp TAB       &kp X         &kp V         &kp L         &kp C         &kp W                      &kp K         &kp H         &kp G         &kp F         &kp Q         &kp Y
-     &kp LSHFT     &kp U         &kp I         &kp A         &kp E         &kp O                      &kp S         &kp N         &kp R         &kp T         &kp D         &kp RSHFT
+     &bt BT_SEL 0       &kp X         &kp V         &kp L         &kp C         &kp W                      &kp K         &kp H         &kp G         &kp F         &kp Q         &kp Y
+     &bt BT_CLR     &kp U         &kp I         &kp A         &kp E         &kp O                      &kp S         &kp N         &kp R         &kp T         &kp D         &kp RSHFT
      &kp LSHFT     &kp RA(Y)     &kp RA(P)     &kp RA(Q)     &kp P         &kp Z                      &kp B         &kp M         &kp COMMA     &kp DOT       &kp J         &kp RSHFT
                                                              &kp ESC       &kp BKSP                   &kp SPC       &kp RET
             >;
