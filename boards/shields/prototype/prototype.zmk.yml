@@ -3,7 +3,7 @@ id: prototype
 name: prototype
 type: shield
 url: https://github.com/exul/prototype
-requires: [pro_micro]
+requires: [pro_micro, i2c_oled]
 features:
   - keys
   - display

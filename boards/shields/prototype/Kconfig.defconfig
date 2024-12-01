@@ -13,4 +13,13 @@ if SHIELD_PROTOTYPE_LEFT || SHIELD_PROTOTYPE_RIGHT
 config ZMK_SPLIT
     default y
 
+    if ZMK_DISPLAY
+
+        config I2C
+            default y
+
+        config SSD1306
+            default n
+
+    endif # ZMK_DISPLAY
 endif
