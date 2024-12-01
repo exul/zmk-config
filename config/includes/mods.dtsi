@@ -1,0 +1,90 @@
+#define KEYS_L 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37
+#define KEYS_R 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 38 39
+
+#define HM_TAPPING_TERM_MS 225
+#define HM_QUICK_TAP_MS 200
+#define HM_REQUIRE_PRIOR_IDLE_MS 175
+#define HM_FAST_REQUIRE_PRIOR_IDLE_MS 120
+#define LT_REQUIRE_PRIOR_IDLE_MS 100
+
+/ {
+
+  behaviors {
+
+    hml: homerow_mods_left {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <HM_TAPPING_TERM_MS>;
+      quick-tap-ms = <HM_QUICK_TAP_MS>;
+	  require-prior-idle-ms = <HM_REQUIRE_PRIOR_IDLE_MS>;
+      bindings = <&kp>, <&kp>;
+
+      hold-trigger-key-positions = <KEYS_R>;
+      hold-trigger-on-release;
+    };
+
+    hmr: homerow_mods_right {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <HM_TAPPING_TERM_MS>;
+      quick-tap-ms = <HM_QUICK_TAP_MS>;
+	  require-prior-idle-ms = <HM_REQUIRE_PRIOR_IDLE_MS>;
+      bindings = <&kp>, <&kp>;
+
+      hold-trigger-key-positions = <KEYS_L>;
+      hold-trigger-on-release;
+    };
+
+    hmlq: homerow_mods_left_quick {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <HM_TAPPING_TERM_MS>;
+      quick-tap-ms = <HM_QUICK_TAP_MS>;
+	  require-prior-idle-ms = <HM_FAST_REQUIRE_PRIOR_IDLE_MS>;
+      bindings = <&kp>, <&kp>;
+
+      hold-trigger-key-positions = <KEYS_R>;
+      hold-trigger-on-release;
+    };
+
+    hmrq: homerow_mods_right_quick {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <HM_TAPPING_TERM_MS>;
+      quick-tap-ms = <HM_QUICK_TAP_MS>;
+	  require-prior-idle-ms = <HM_FAST_REQUIRE_PRIOR_IDLE_MS>;
+      bindings = <&kp>, <&kp>;
+
+      hold-trigger-key-positions = <KEYS_L>;
+      hold-trigger-on-release;
+    };
+
+    ltl: layer_toggle_left {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <HM_TAPPING_TERM_MS>;
+      quick-tap-ms = <HM_QUICK_TAP_MS>;
+      require-prior-idle-ms = <LT_REQUIRE_PRIOR_IDLE_MS>;
+      bindings = <&mo>, <&kp>;
+
+      hold-trigger-key-positions = <KEYS_R>;
+    };
+
+    ltr: layer_toggle_right {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <HM_TAPPING_TERM_MS>;
+      quick-tap-ms = <HM_QUICK_TAP_MS>;
+	  require-prior-idle-ms = <LT_REQUIRE_PRIOR_IDLE_MS>;
+      bindings = <&mo>, <&kp>;
+
+      hold-trigger-key-positions = <KEYS_L>;
+    };
+  };
+};
