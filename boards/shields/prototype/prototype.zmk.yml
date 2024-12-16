@@ -7,6 +7,7 @@ requires: [pro_micro, i2c_oled]
 features:
   - keys
   - display
+  - encoder
 siblings:
   - prototype_left
   - prototype_right
