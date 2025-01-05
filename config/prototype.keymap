@@ -63,14 +63,14 @@
             label = "Functions";
             bindings = <
     &trans              &bt BT_SEL 0        &mkp LCLK           &mmv MOVE_UP        &mkp RCLK           &msc SCRL_UP                            &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &bt BT_CLR
-    &trans              &bt BT_SEL 1        &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_DOWN                          &kp C_VOL_DN        &hmrq RSHFT F5      &hmr RCTRL F6       &hmr RALT F7        &hmr RGUI F8        &trans
+    &trans              &bt BT_SEL 1        &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_DOWN                          &kp C_VOL_DN        &hmrq RSHFT F5      &hmr RCTRL F6       &hmr RALT F7        &hmr RGUI F8        &studio_unlock
     &bootloader         &bt BT_SEL 2        &msc SCRL_LEFT      &mkp MCLK           &msc SCRL_RIGHT     &trans                                  &kp C_MUTE          &kp F1              &kp F2              &kp F3              &kp F4              &bootloader
                                                                 &trans              &ltl 2 BKSP         &ltl 3 ESC                              &ltr 3 RET          &ltr 2 SPC          &trans
             >;
         };
 
         gaming_layer {
-            label = "Gaming";
+            label = "Game";
             bindings = <
     &kp ESC             &kp TAB             &kp Q               &kp W               &kp E               &kp R                                   &kp T               &kp Z               &kp U               &kp I               &kp O               &kp P
     &mo GAMINGNUM       &kp LSHFT           &kp A               &kp S               &kp D               &kp F                                   &kp G               &kp H               &kp J               &kp K               &kp L               &kp COLON
@@ -80,7 +80,7 @@
         };
 
         gaming_number_layer {
-            label = "GamingNum";
+            label = "GameNum";
             bindings = <
     &trans              &kp F9              &kp F10             &kp F11             &kp F12             &trans                                  &trans              &kp N7              &kp N8              &kp N9              &trans           &to BASE
     &trans              &kp F5              &kp F6              &kp F7              &kp F8              &trans                                  &trans              &kp N4              &kp N5              &kp N6              &trans           &trans

@@ -1,9 +1,10 @@
+#include "prototype-layouts.dtsi"
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
+        zmk,physical-layout = &physical_layout_0;
     };
 
     default_transform: keymap_transform_0 {
@@ -59,6 +60,10 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9) 
     };
 };
 
+&physical_layout_0 {
+    transform = <&default_transform>;
+};
+
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -88,4 +93,3 @@ nice_view_spi: &spi0 {
 &pro_micro_i2c {
     status = "disabled";
 };
-
