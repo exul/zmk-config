@@ -45,7 +45,7 @@
     &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &kp Y
     &mo SYMBOLS         &hml LGUI U         &hml LALT I         &hml LCTRL A        &hmlq LSHFT E       &kp O                                   &kp S               &hmrq RSHFT N       &hmr RCTRL R        &hmr RALT T         &hmr RGUI D         &mo SYMBOLS
     &kp LSHFT           &kp RA(Y)           &kp RA(P)           &kp RA(Q)           &kp P               &kp Z                                   &kp B               &kp M               &kp COMMA           &kp DOT             &kp J               &kp RSHFT
-                                                                &mkp LCLK           &ltl_bkps_del 2 0   &mo 3                                   &ltr 3 RET          &ltr 2 SPC          &mkp RCLK
+                                                                &mkp LCLK           &ltl 2 BKSP         &mo 3                                   &ltr 3 RET          &ltr 2 SPC          &mkp RCLK
             >;
 
              sensor-bindings = <
@@ -60,7 +60,7 @@
     &kp TAB             &kp RA(N2)          &kp UNDER           &kp LBKT            &kp RBKT            &kp CARET                               &kp EXCL            &kp LT              &kp GT              &kp EQUAL           &kp AMPS            &kp AT
     &to GAMING          &hml LGUI BSLH      &hml LALT FSLH      &hml LCTRL LBRC     &hmlq LSHFT RBRC    &kp ASTRK                               &kp QMARK           &hmrq RSHFT LPAR    &hmr RCTRL RPAR     &hmr RALT MINUS     &hmr RGUI COLON     &to GAMING
     &bootloader         &kp HASH            &kp DLLR            &kp PIPE            &kp TILDE           &kp GRAVE                               &kp PLUS            &kp PRCNT           &kp DQT             &kp SQT             &kp SEMI            &bootloader
-                                                                &trans              &ltl 2 BKSP         &mo 3                                   &ltr 3 RET          &ltr 2 SPC          &trans
+                                                                &trans              &ltl 2 DEL          &mo 3                                   &ltr 3 RET          &ltr 2 SPC          &trans
             >;
         };
 

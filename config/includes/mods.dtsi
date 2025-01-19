@@ -86,24 +86,5 @@
 
       hold-trigger-key-positions = <KEYS_L>;
     };
-
-    bkps_del: backspace_delete {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      bindings = <&kp BKSP>, <&kp DEL>;
-      mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    ltl_bkps_del: layer_toggle_left_backspace_delete {
-      compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <2>;
-      flavor = "balanced";
-      tapping-term-ms = <HM_TAPPING_TERM_MS>;
-      quick-tap-ms = <HM_QUICK_TAP_MS>;
-	    require-prior-idle-ms = <LT_REQUIRE_PRIOR_IDLE_MS>;
-      bindings = <&mo>, <&bkps_del>;
-
-      hold-trigger-key-positions = <KEYS_L>;
-    };
   };
 };
