@@ -14,9 +14,8 @@
 #define SYM 1
 #define NAVNUM 2
 #define FUNC 3
-#define WM 4
-#define GAMING 5
-#define GAMINGNUM 6
+#define GAMING 4
+#define GAMINGNUM 5
 
 #include "includes/mods.dtsi"
 
@@ -30,7 +29,7 @@
 
     &kp TAB             &hml LC(X) X        &hml LC(V) V        &kp L               &hml LC(C) C        &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &kp Y
     &mo SYM             &hml LGUI U         &hml LALT I         &ltl NAVNUM A       &hmlq LSHFT E       &kp O                                   &kp S               &hmrq RSHFT N       &ltr NAVNUM R       &hmr RALT T         &hmr RGUI D         &mo SYM
-    &kp LSHFT           &ltl WM RA(Y)       &kp RA(P)           &ltl FUNC RA(Q)     &kp P               &hml LC(Z) Z                            &kp B               &kp M               &ltr FUNC COMMA     &kp DOT             &ltr WM J           &kp RSHFT
+    &kp LSHFT           &kp RA(Y)           &kp RA(P)           &ltl FUNC RA(Q)     &kp P               &hml LC(Z) Z                            &kp B               &kp M               &ltr FUNC COMMA     &kp DOT             &kp J               &kp RSHFT
                                                                 &kp LCTRL           &hmlh LCTRL BKSP    &kp ESC                                 &kp RET             &hmrh RCTRL SPC     &kp RCTRL
             >;
 
@@ -67,17 +66,6 @@
     &bt BT_SEL 1        &kp C_BRI_UP           &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_DOWN                          &kp C_VOL_DN        &hmrq RSHFT F5      &kp F6              &hmr RALT F7        &hmr RGUI F8        &trans
     &bt BT_SEL 2        &kp C_BRI_DN           &mkp LCLK           &mkp MCLK           &mkp RCLK           &kp LC(Z)                               &kp C_MUTE          &kp F1              &kp F2              &kp F3              &kp F4              &studio_unlock
                                                                 &trans              &hmlh LCTRL DEL     &kp LCTRL                               &kp RET             &hmrh RCTL SPC      &trans
-            >;
-        };
-
-        wm_layer {
-            label = "WM";
-            bindings = <
-
-    &kp TAB             &trans              &trans              &trans              &trans              &trans                                  &trans              &kp RG(N7)          &kp RG(N8)          &kp RG(N9)          &trans              &kp AT
-    &kp SYM             &trans              &trans              &trans              &trans              &trans                                  &trans              &kp RG(N4)          &kp RG(N5)          &kp RG(N6)          &trans              &mo SYM
-    &kp LSHFT           &trans              &trans              &trans              &trans              &trans                                  &trans              &kp RG(N1)          &kp RG(N2)          &kp RG(N3)          &trans              &kp RSHFT
-                                                                &trans              &trans              &trans                                  &trans              &ltl RCTRL RG(N0)   &trans
             >;
         };
 
