@@ -3,7 +3,7 @@
 
 #define HM_TAPPING_TERM_MS 175
 #define HM_QUICK_TAP_MS 150
-#define HM_FAST_REQUIRE_PRIOR_IDLE_MS 150
+#define FAST_REQUIRE_PRIOR_IDLE_MS 150
 #define REQUIRE_PRIOR_IDLE_MS 175
 
 / {
@@ -42,7 +42,7 @@
       flavor = "balanced";
       tapping-term-ms = <HM_TAPPING_TERM_MS>;
       quick-tap-ms = <HM_QUICK_TAP_MS>;
-	    require-prior-idle-ms = <HM_FAST_REQUIRE_PRIOR_IDLE_MS>;
+	    require-prior-idle-ms = <FAST_REQUIRE_PRIOR_IDLE_MS>;
       bindings = <&kp>, <&kp>;
 
       hold-trigger-key-positions = <KEYS_R>;
@@ -55,7 +55,7 @@
       flavor = "balanced";
       tapping-term-ms = <HM_TAPPING_TERM_MS>;
       quick-tap-ms = <HM_QUICK_TAP_MS>;
-	    require-prior-idle-ms = <HM_FAST_REQUIRE_PRIOR_IDLE_MS>;
+	    require-prior-idle-ms = <FAST_REQUIRE_PRIOR_IDLE_MS>;
       bindings = <&kp>, <&kp>;
 
       hold-trigger-key-positions = <KEYS_L>;
@@ -107,6 +107,30 @@
       tapping-term-ms = <HM_TAPPING_TERM_MS>;
       quick-tap-ms = <HM_QUICK_TAP_MS>;
 	    require-prior-idle-ms = <REQUIRE_PRIOR_IDLE_MS>;
+      bindings = <&mo>, <&kp>;
+
+      hold-trigger-key-positions = <KEYS_L>;
+    };
+
+    ltlq: layer_toggle_left_quick {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <HM_TAPPING_TERM_MS>;
+      quick-tap-ms = <HM_QUICK_TAP_MS>;
+      require-prior-idle-ms = <FAST_REQUIRE_PRIOR_IDLE_MS>;
+      bindings = <&mo>, <&kp>;
+
+      hold-trigger-key-positions = <KEYS_R>;
+    };
+
+    ltrq: layer_toggle_right_quick {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <HM_TAPPING_TERM_MS>;
+      quick-tap-ms = <HM_QUICK_TAP_MS>;
+	    require-prior-idle-ms = <FAST_REQUIRE_PRIOR_IDLE_MS>;
       bindings = <&mo>, <&kp>;
 
       hold-trigger-key-positions = <KEYS_L>;
