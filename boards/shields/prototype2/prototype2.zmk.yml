@@ -1,0 +1,13 @@
+file_format: "1"
+id: prototype2
+name: prototype2
+type: shield
+url: https://github.com/exul/prototype
+requires: [seeed_xiao]
+features:
+  - keys
+  - studio
+siblings:
+  - prototype2_dongle
+  - prototype2_left
+  - prototype2_right

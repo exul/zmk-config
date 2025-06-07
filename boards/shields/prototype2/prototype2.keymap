@@ -28,7 +28,7 @@
      &bt BT_SEL 0  &kp X         &kp V         &kp L         &kp C         &kp W                      &kp K         &kp H         &kp G         &kp F         &kp Q         &kp Y
      &kp LSHFT     &kp U         &kp I         &kp A         &kp E         &kp O                      &kp S         &kp N         &kp R         &kp T         &kp D         &kp RSHFT
      &kp LSHFT     &kp RA(Y)     &kp RA(P)     &kp RA(Q)     &kp P         &kp Z                      &kp B         &kp M         &kp COMMA     &kp DOT       &kp J         &kp RSHFT
-                                               &kp LCTRL     &kp ESC       &kp BKSP                   &kp SPC       &kp RET       &kp RCTRL
+                                                             &kp ESC       &kp BKSP                   &kp SPC       &kp RET
             >;
         };
 	};

@@ -1,0 +1,33 @@
+if SHIELD_PROTOTYPE2_DONGLE
+
+# Max 16 characters in keyboard name
+config ZMK_KEYBOARD_NAME
+    default "Prototype2"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
+    default 2
+
+config ZMK_DISPLAY
+    default y
+
+config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
+    default y
+
+config BT_MAX_CONN
+    default 5
+
+# Set this to the same number as BT_MAX_CONN
+config BT_MAX_PAIRED
+    default 5
+
+endif
+
+if SHIELD_PROTOTYPE2_DONGLE || SHIELD_PROTOTYPE2_LEFT || SHIELD_PROTOTYPE2_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
