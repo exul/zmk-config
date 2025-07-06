@@ -19,13 +19,15 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: prototype2_dongle prospector_adapter
+    shield: prototype2_dongle dongle_screen
     artifact-name: prototype2_dongle
   - board: seeeduino_xiao_ble
     shield: prototype2_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: prototype2_left
   - board: seeeduino_xiao_ble
     shield: prototype2_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: prototype2_right
   - board: seeeduino_xiao_ble
     shield: settings_reset

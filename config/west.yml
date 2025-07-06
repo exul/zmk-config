@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: badjeff
-      url-base: https://github.com/badjeff
+    - name: janpfischer
+      url-base: https://github.com/janpfischer
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.2.1
+      revision: main
       import: app/west.yml
-    - name: prospector-zmk-module
-      remote: badjeff
+    - name: zmk-dongle-screen
+      remote: janpfischer
       revision: main
   self:
     path: config
