@@ -28,8 +28,8 @@
             bindings = <
 
     &kp TAB             &hml LC(X) X        &hml LC(V) V        &kp L               &hml LC(C) C        &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &kp Y
-    &ltlq SYM ESC       &hml LGUI U         &hml LALT I         &ltlq NAVNUM A      &hmlq LSHFT E       &kp O                                   &kp S               &hmrq RSHFT N       &ltrq NAVNUM R      &hmr RALT T         &hmr RGUI D         &ltrq SYM RET
-    &kp LSHFT           &kp RA(Y)           &kp RA(P)           &ltl FUNC RA(Q)     &kp P               &hml LC(Z) Z                            &kp B               &kp M               &ltr FUNC COMMA     &kp DOT             &kp J               &kp RSHFT
+    &mo SYM             &hml LGUI U         &hml LALT I         &ltlq NAVNUM A      &hmlq LSHFT E       &kp O                                   &kp S               &hmrq RSHFT N       &ltrq NAVNUM R      &hmr RALT T         &hmr RGUI D         &mo SYM
+    &kp ESC             &kp RA(Y)           &kp RA(P)           &ltl FUNC RA(Q)     &kp P               &hml LC(Z) Z                            &kp B               &kp M               &ltr FUNC COMMA     &kp DOT             &kp J               &kp RET
                                                                                     &kp BKSP            &kp LCTRL                               &kp RCTRL           &kp SPC
             >;
 
