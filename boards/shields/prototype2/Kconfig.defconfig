@@ -17,11 +17,10 @@ config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
     default y
 
 config BT_MAX_CONN
-    default 5
+    default 3
 
-# Set this to the same number as BT_MAX_CONN
 config BT_MAX_PAIRED
-    default 5
+    default 3
 
 endif
 
