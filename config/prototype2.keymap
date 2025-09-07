@@ -16,8 +16,29 @@
 #define FUNC 3
 #define GAMING 4
 #define GAMINGNUM 5
+#define BASEEXP 6
+#define METAEXP 7
+#define SYMEXP 8
+#define NNEXP 9
+#define FUNCEXPT 10
 
 #include "includes/mods.dtsi"
+
+&sk {
+    quick-release;
+};
+
+/ {
+  macros {
+    wm: wm {
+    compatible = "zmk,behavior-macro";
+    wait-ms = <0>;
+    tap-ms = <0>;
+    #binding-cells = <0>;
+    bindings = <&sk LGUI &sl NNEXP>;
+    };
+  };
+};
 
 / {
     keymap {
@@ -82,10 +103,60 @@
         gaming_number_layer {
             label = "GameNum";
             bindings = <
-    &trans              &kp F9              &kp F10             &kp F11             &kp F12             &trans                                  &trans              &kp N7              &kp N8              &kp N9              &trans           &to BASE
+    &to BASEEXP         &kp F9              &kp F10             &kp F11             &kp F12             &trans                                  &trans              &kp N7              &kp N8              &kp N9              &trans           &to BASE
     &trans              &kp F5              &kp F6              &kp F7              &kp F8              &trans                                  &trans              &kp N4              &kp N5              &kp N6              &trans           &trans
     &trans              &kp F1              &kp F2              &kp F3              &kp F4              &trans                                  &trans              &kp N1              &kp N2              &kp N3              &trans           &bt BT_SEL 3
                                                                                     &kp BKSP            &kp SPC                                 &kp RET             &kp N0
+            >;
+        };
+
+        baseexp_layer {
+            label = "Base Exp";
+            bindings = <
+    &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &kp Y
+    &mo SYMEXP          &kp U               &kp I               &kp A               &kp E               &kp O                                   &kp S               &kp N               &kp R               &kp T               &kp D               &mo SYMEXP
+    &kp ESC             &kp RA(Y)           &kp RA(P)           &kp RA(Q)           &kp P               &kp Z                                   &kp B               &kp M               &kp COMMA           &kp DOT             &kp J               &kp RET
+                                                                                    &kp BKSP            &sl METAEXP                             &sl METAEXP         &kp SPC
+            >;
+        };
+
+        meta_layer {
+            label = "Meta Exp";
+            bindings = <
+    &to BASE            &kp LC(X)           &kp LC(V)           &kp LC(L)           &kp LC(C)           &kp LC(W)                               &kp LC(K)           &kp LC(H)           &kp LC(G)           &kp LC(F)           &kp LC(Q)        &kp LC(Y)
+    &trans              &sk LGUI            &sk LALT            &sl NNEXP           &sk LSHFT           &wm                                     &kp LC(S)           &sk LSHFT           &sl NNEXP           &sk RALT            &sk RGUI            &trans
+    &bootloader         &trans              &trans              &sl FUNCEXPT        &kp LC(P)           &kp LC(Z)                               &kp LC(B)           &kp LC(M)           &sl FUNCEXPT        &trans              &trans              &bootloader
+                                                                                    &kp BKSP            &sk LCTRL                               &sk LCTRL           &kp SPC
+	        >;
+        };
+
+        symbolsexp_layer {
+            label = "Sym Exp";
+            bindings = <
+    &trans              &trans              &kp UNDER           &kp LBKT            &kp RBKT            &kp CARET                               &kp EXCL            &kp LT              &kp GT              &kp EQUAL           &kp AMPS            &kp AT
+    &trans              &kp BSLH            &kp FSLH            &kp LBRC            &kp RBRC            &kp ASTRK                               &kp QMARK           &kp LPAR            &kp RPAR            &kp MINUS           &kp COLON           &trans
+    &trans              &kp HASH            &kp DLLR            &kp PIPE            &kp TILDE           &kp GRAVE                               &kp PLUS            &kp PRCNT           &kp DQT             &kp SQT             &kp SEMI            &trans
+                                                                                    &kp DEL             &trans                                  &trans              &kp RET
+            >;
+        };
+
+        navnumexp_layer {
+            label = "NN Exp";
+            bindings = <
+    &kp TAB             &kp LC(X)           &kp LC(V)           &kp UP              &kp LC(C)           &kp PG_UP                               &kp KP_DIVIDE       &kp N7              &kp N8              &kp N9              &kp KP_MINUS        &kp COLON
+    &trans              &kp C_AC_FORWARD    &kp LEFT            &kp DOWN            &kp RIGHT           &kp PG_DN                               &kp KP_MULTIPLY     &kp N4              &kp N5              &kp N6              &kp KP_PLUS         &trans
+    &trans              &kp C_AC_BACK       &kp HOME            &caps_word          &kp END             &kp LC(Z)                               &kp SPC             &kp N1              &kp N2              &kp N3              &kp DOT             &trans
+                                                                                    &kp BKSP            &trans                                  &trans              &kp N0
+	        >;
+        };
+
+        functionsexp_layer {
+            label = "Fun Exp";
+            bindings = <
+    &trans              &kp LC(X)           &kp LC(V)           &trans              &kp LC(C)           &trans                                  &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &trans
+    &trans              &kp LGUI            &kp LALT            &kp LCTRL           &kp LSHFT           &trans                                  &kp C_VOL_DN        &kp F5              &kp F6              &kp F7              &kp F8              &trans
+    &trans              &trans              &trans              &trans              &trans              &kp LC(Z)                               &kp C_MUTE          &kp F1              &kp F2              &kp F3              &kp F4              &studio_unlock
+                                                                                    &kp BKSP            &trans                                  &trans              &kp SPC
             >;
         };
 	};
