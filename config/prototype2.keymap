@@ -41,6 +41,24 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+        combo_ae {
+            timeout-ms = <250>;
+            key-positions = <25 15>;
+            layers = <BASEEXP>;
+            bindings = <&kp RA(Q)>;
+        };
+        combo_oe {
+            timeout-ms = <250>;
+            key-positions = <25 17>;
+            layers = <BASEEXP>;
+            bindings = <&kp RA(P)>;
+        };
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -105,7 +123,7 @@
             bindings = <
     &to BASEEXP         &kp F9              &kp F10             &kp F11             &kp F12             &trans                                  &trans              &kp N7              &kp N8              &kp N9              &trans           &to BASE
     &trans              &kp F5              &kp F6              &kp F7              &kp F8              &trans                                  &trans              &kp N4              &kp N5              &kp N6              &trans           &trans
-    &trans              &kp F1              &kp F2              &kp F3              &kp F4              &trans                                  &trans              &kp N1              &kp N2              &kp N3              &trans           &bt BT_SEL 3
+    &trans              &kp F1              &kp F2              &kp F3              &kp F4              &trans                                  &trans              &kp N1              &kp N2              &kp N3              &trans           &studio_unlock
                                                                                     &kp BKSP            &kp SPC                                 &kp RET             &kp N0
             >;
         };
@@ -115,28 +133,28 @@
             bindings = <
     &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &kp Y
     &mo SYMEXP          &kp U               &kp I               &kp A               &kp E               &kp O                                   &kp S               &kp N               &kp R               &kp T               &kp D               &mo SYMEXP
-    &kp ESC             &kp RA(Y)           &kp RA(P)           &kp RA(Q)           &kp P               &kp Z                                   &kp B               &kp M               &kp COMMA           &kp DOT             &kp J               &kp RET
-                                                                                    &kp BKSP            &sl METAEXP                             &sl METAEXP         &kp SPC
+    &kp ESC             &kp RA(Y)           &kp COMMA           &sl METAEXP         &kp P               &kp Z                                   &kp B               &kp M               &sl METAEXP         &kp DOT             &kp J               &kp RET
+                                                                                    &kp BKSP            &sk LCTRL                               &sk RCTRL           &kp SPC
             >;
         };
 
         meta_layer {
             label = "Meta Exp";
             bindings = <
-    &to BASE            &kp LC(X)           &kp LC(V)           &kp LC(L)           &kp LC(C)           &kp LC(W)                               &kp LC(K)           &kp LC(H)           &kp LC(G)           &kp LC(F)           &kp LC(Q)        &kp LC(Y)
+    &trans              &trans              &trans              &trans              &trans              &trans                                  &trans              &trans              &trans              &trans              &trans              &trans
     &trans              &sk LGUI            &sk LALT            &sl NNEXP           &sk LSHFT           &wm                                     &kp LC(S)           &sk LSHFT           &sl NNEXP           &sk RALT            &sk RGUI            &trans
-    &bootloader         &trans              &trans              &sl FUNCEXPT        &kp LC(P)           &kp LC(Z)                               &kp LC(B)           &kp LC(M)           &sl FUNCEXPT        &trans              &trans              &bootloader
-                                                                                    &kp BKSP            &sk LCTRL                               &sk LCTRL           &kp SPC
+    &trans              &trans              &trans              &sl FUNCEXPT        &trans              &trans                                  &trans              &trans              &sl FUNCEXPT        &trans              &trans              &trans
+                                                                                    &trans              &trans                                  &trans              &trans
 	        >;
         };
 
         symbolsexp_layer {
             label = "Sym Exp";
             bindings = <
-    &trans              &trans              &kp UNDER           &kp LBKT            &kp RBKT            &kp CARET                               &kp EXCL            &kp LT              &kp GT              &kp EQUAL           &kp AMPS            &kp AT
+    &trans              &to BASE            &kp UNDER           &kp LBKT            &kp RBKT            &kp CARET                               &kp EXCL            &kp LT              &kp GT              &kp EQUAL           &kp AMPS            &kp AT
     &trans              &kp BSLH            &kp FSLH            &kp LBRC            &kp RBRC            &kp ASTRK                               &kp QMARK           &kp LPAR            &kp RPAR            &kp MINUS           &kp COLON           &trans
     &trans              &kp HASH            &kp DLLR            &kp PIPE            &kp TILDE           &kp GRAVE                               &kp PLUS            &kp PRCNT           &kp DQT             &kp SQT             &kp SEMI            &trans
-                                                                                    &kp DEL             &trans                                  &trans              &kp RET
+                                                                                    &kp DEL             &trans                                  &trans              &trans
             >;
         };
 
@@ -153,10 +171,10 @@
         functionsexp_layer {
             label = "Fun Exp";
             bindings = <
-    &trans              &kp LC(X)           &kp LC(V)           &trans              &kp LC(C)           &trans                                  &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &trans
+    &bootloader         &kp LC(X)           &kp LC(V)           &trans              &kp LC(C)           &trans                                  &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &bootloader
     &trans              &kp LGUI            &kp LALT            &kp LCTRL           &kp LSHFT           &trans                                  &kp C_VOL_DN        &kp F5              &kp F6              &kp F7              &kp F8              &trans
-    &trans              &trans              &trans              &trans              &trans              &kp LC(Z)                               &kp C_MUTE          &kp F1              &kp F2              &kp F3              &kp F4              &studio_unlock
-                                                                                    &kp BKSP            &trans                                  &trans              &kp SPC
+    &trans              &trans              &trans              &trans              &trans              &kp LC(Z)                               &kp C_MUTE          &kp F1              &kp F2              &kp F3              &kp F4              &trans
+                                                                                    &trans              &trans                                  &trans              &kp SPC
             >;
         };
 	};
