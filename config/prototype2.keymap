@@ -133,7 +133,7 @@
             bindings = <
     &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &kp Y
     &mo SYMEXP          &kp U               &kp I               &kp A               &kp E               &kp O                                   &kp S               &kp N               &kp R               &kp T               &kp D               &mo SYMEXP
-    &kp ESC             &kp RA(Y)           &kp COMMA           &sl METAEXP         &kp P               &kp Z                                   &kp B               &kp M               &sl METAEXP         &kp DOT             &kp J               &kp RET
+    &sk LSHFT           &kp RA(Y)           &kp COMMA           &sl METAEXP         &kp P               &kp Z                                   &kp B               &kp M               &sl METAEXP         &kp DOT             &kp J               &sk RSHFT
                                                                                     &kp BKSP            &sk LCTRL                               &sk RCTRL           &kp SPC
             >;
         };
@@ -142,8 +142,8 @@
             label = "Meta Exp";
             bindings = <
     &trans              &trans              &trans              &trans              &trans              &trans                                  &trans              &trans              &trans              &trans              &trans              &trans
-    &trans              &sk LGUI            &sk LALT            &sl NNEXP           &sk LSHFT           &wm                                     &kp LC(S)           &sk LSHFT           &sl NNEXP           &sk RALT            &sk RGUI            &trans
-    &trans              &trans              &trans              &sl FUNCEXPT        &trans              &trans                                  &trans              &trans              &sl FUNCEXPT        &trans              &trans              &trans
+    &trans              &sk LGUI            &sk LALT            &sl NNEXP           &sk LSHFT           &wm                                     &trans              &sk LSHFT           &sl NNEXP           &sk RALT            &sk RGUI            &trans
+    &kp ESC                &trans              &trans              &sl FUNCEXPT        &trans              &trans                                  &trans              &trans              &sl FUNCEXPT        &trans              &trans           &kp RET
                                                                                     &trans              &trans                                  &trans              &trans
 	        >;
         };
