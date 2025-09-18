@@ -29,36 +29,6 @@
 };
 
 / {
-  macros {
-    wm: wm {
-    compatible = "zmk,behavior-macro";
-    wait-ms = <0>;
-    tap-ms = <0>;
-    #binding-cells = <0>;
-    bindings = <&sk LGUI &sl NNEXP>;
-    };
-  };
-};
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_ae {
-            timeout-ms = <1000>;
-            key-positions = <25 15>;
-            layers = <BASEEXP>;
-            bindings = <&kp RA(Q)>;
-        };
-        combo_oe {
-            timeout-ms = <1000>;
-            key-positions = <25 17>;
-            layers = <BASEEXP>;
-            bindings = <&kp RA(P)>;
-        };
-    };
-};
-
-/ {
     keymap {
         compatible = "zmk,keymap";
 
