@@ -38,7 +38,7 @@
 
     &kp TAB             &hml LC(X) X        &hml LC(V) V        &kp L               &hml LC(C) C        &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &kp Y
     &mo SYM             &hml LGUI U         &hml LALT I         &ltlq NAVNUM A      &hmlq LSHFT E       &kp O                                   &kp S               &hmrq RSHFT N       &ltrq NAVNUM R      &hmr RALT T         &hmr RGUI D         &mo SYM
-    &kp ESC             &kp RA(Y)           &kp RA(P)           &ltl FUNC RA(Q)     &kp P               &hml LC(Z) Z                            &kp B               &kp M               &ltr FUNC COMMA     &kp DOT             &kp J               &kp RET
+    &kp LSHFT           &kp RA(Y)           &kp RA(P)           &ltl FUNC RA(Q)     &kp P               &hml LC(Z) Z                            &kp B               &kp M               &ltr FUNC COMMA     &kp DOT             &kp J               &kp RSHFT
                                                                                     &kp BKSP            &kp LCTRL                               &kp RCTRL           &kp SPC
             >;
 
@@ -72,7 +72,7 @@
             label = "Functions";
             bindings = <
     &bt BT_SEL 0        &kp LC(X)           &kp LC(V)           &mmv MOVE_UP        &kp LC(C)           &msc SCRL_UP                            &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &bt BT_CLR
-    &bt BT_SEL 1        &kp C_BRI_UP        &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_DOWN                          &kp C_VOL_DN        &hmrq RSHFT F5      &kp F6              &hmr RALT F7        &hmr RGUI F8        &tog FUNC
+    &bt BT_SEL 1        &kp C_BRI_UP        &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &kp ESC                                 &kp RET             &hmrq RSHFT F5      &kp F6              &hmr RALT F7        &hmr RGUI F8        &tog FUNC
     &bt BT_SEL 2        &kp C_BRI_DN        &mkp LCLK           &mkp MCLK           &mkp RCLK           &kp LC(Z)                               &kp C_MUTE          &kp F1              &kp F2              &kp F3              &kp F4              &studio_unlock
                                                                                     &kp BKSP            &kp LCTRL                               &kp RCTRL           &kp SPC
             >;
