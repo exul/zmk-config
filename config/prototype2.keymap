@@ -112,7 +112,7 @@
             label = "Meta Exp";
             bindings = <
     &trans              &trans              &trans              &trans              &trans              &trans                                  &trans              &trans              &trans              &trans              &trans              &trans
-    &trans              &sk LGUI            &sk LALT            &trans              &kp ESC             &trans                                  &trans              &kp RET             &trans              &sk RALT            &sk RGUI            &trans
+    &trans              &sk LGUI            &sk LALT            &sk LSHFT           &kp ESC             &trans                                  &trans              &kp RET             &sk RSHFT           &sk RALT            &sk RGUI            &trans
     &trans              &trans              &sl FUNCEXPT        &trans              &sl NNEXP           &trans                                  &trans              &sl NNEXP           &trans              &sl FUNCEXPT        &trans              &trans
                                                                                     &trans              &trans                                  &trans              &trans
 	        >;
