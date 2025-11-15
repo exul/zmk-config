@@ -145,7 +145,7 @@
     wait-ms = <0>;
     tap-ms = <0>;
     #binding-cells = <0>;
-    bindings = <&sk LGUI &sl NNEXP>;
+    bindings = <&sk LGUI &sl NAVNUM>;
     };
   };
 };
@@ -156,13 +156,13 @@
         combo_ae {
             timeout-ms = <1000>;
             key-positions = <25 15>;
-            layers = <BASEEXP>;
+            layers = <BASE>;
             bindings = <&kp RA(Q)>;
         };
         combo_oe {
             timeout-ms = <1000>;
             key-positions = <25 17>;
-            layers = <BASEEXP>;
+            layers = <BASE>;
             bindings = <&kp RA(P)>;
         };
     };
