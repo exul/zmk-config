@@ -35,9 +35,9 @@
         base_layer {
             label = "Base";
             bindings = <
-    &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &kp Y
-    &mo SYM             &kp U               &kp I               &kp A               &kp E               &kp O                                   &kp S               &kp N               &kp R               &kp T               &kp D               &mo SYM
-    &sk LSHFT           &kp RA(Y)           &kp COMMA           &sl META            &kp P               &kp Z                                   &kp B               &kp M               &sl META            &kp DOT             &kp J               &sk RSHFT
+    &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &key_repeat
+    &sl SYM             &kp U               &kp I               &kp A               &kp E               &kp O                                   &kp S               &kp N               &kp R               &kp T               &kp D               &sl SYM
+    &sk LSHFT           &kp Y               &kp COMMA           &sl META            &kp P               &kp Z                                   &kp B               &kp M               &sl META            &kp DOT             &kp J               &sk RSHFT
                                                                                     &kp BKSP            &sk LCTRL                               &sk RCTRL           &kp SPC
             >;
         };
@@ -55,9 +55,9 @@
         symbols_layer {
             label = "Sym";
             bindings = <
-    &trans              &to BASEOLD         &kp UNDER           &kp LBKT            &kp RBKT            &kp CARET                               &kp EXCL            &kp LT              &kp GT              &kp EQUAL           &kp AMPS            &kp AT
+    &kp GRAVE           &kp HASH            &kp UNDER           &kp LBKT            &kp RBKT            &kp PIPE                                &kp EXCL            &kp LT              &kp GT              &kp EQUAL           &kp AMPS            &kp AT
     &trans              &kp BSLH            &kp FSLH            &kp LBRC            &kp RBRC            &kp ASTRK                               &kp QMARK           &kp LPAR            &kp RPAR            &kp MINUS           &kp COLON           &trans
-    &trans              &kp HASH            &kp DLLR            &kp PIPE            &kp TILDE           &kp GRAVE                               &kp PLUS            &kp PRCNT           &kp DQT             &kp SQT             &kp SEMI            &trans
+    &trans              &kp RA(Y)           &kp DLLR            &kp RA(Q)           &kp TILDE           &kp RA(P)                               &kp PLUS            &kp PRCNT           &kp DQT             &kp SQT             &kp SEMI            &trans
                                                                                     &kp DEL             &trans                                  &trans              &trans
             >;
         };
@@ -75,7 +75,7 @@
         functions_layer {
             label = "Fun";
             bindings = <
-    &trans              &kp LC(X)           &kp LC(V)           &kp UP              &kp LC(C)           &trans                                  &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &trans
+    &to BASEOLD         &kp LC(X)           &kp LC(V)           &kp UP              &kp LC(C)           &trans                                  &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &trans
     &kp LEFT            &kp LGUI            &kp LALT            &kp DOWN            &kp LSHFT           &kp RIGHT                               &kp C_VOL_DN        &kp F5              &kp F6              &kp F7              &kp F8              &trans
     &bootloader         &trans              &trans              &tog FUNC           &trans              &kp LC(Z)                               &kp C_MUTE          &kp F1              &kp F2              &kp F3              &kp F4              &bootloader
                                                                                     &trans              &trans                                  &trans              &kp SPC

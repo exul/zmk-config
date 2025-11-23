@@ -137,39 +137,3 @@
     };
   };
 };
-
-/ {
-  macros {
-    wm: wm {
-    compatible = "zmk,behavior-macro";
-    wait-ms = <0>;
-    tap-ms = <0>;
-    #binding-cells = <0>;
-    bindings = <&sk LGUI &sl NAVNUM>;
-    };
-  };
-};
-
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_ae {
-            timeout-ms = <1000>;
-            key-positions = <25 15>;
-            layers = <BASE>;
-            bindings = <&kp RA(Q)>;
-        };
-        combo_oe {
-            timeout-ms = <1000>;
-            key-positions = <25 17>;
-            layers = <BASE>;
-            bindings = <&kp RA(P)>;
-        };
-        combo_oe_alternative {
-            timeout-ms = <1000>;
-            key-positions = <25 16>;
-            layers = <BASE>;
-            bindings = <&kp RA(P)>;
-        };
-    };
-};
