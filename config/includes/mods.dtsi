@@ -165,5 +165,11 @@
             layers = <BASE>;
             bindings = <&kp RA(P)>;
         };
+        combo_oe_alternative {
+            timeout-ms = <1000>;
+            key-positions = <25 16>;
+            layers = <BASE>;
+            bindings = <&kp RA(P)>;
+        };
     };
 };
