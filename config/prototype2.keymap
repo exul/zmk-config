@@ -17,13 +17,7 @@
 #define FUNC 4
 #define GAMING 5
 #define GAMINGNUM 6
-#define BASEOLD  7
-#define SYMOLD 8
-#define NAVNUMOLD 9
-#define FUNCOLD 10
 
-
-#include "includes/mods.dtsi"
 
 &sk {
     quick-release;
@@ -46,8 +40,8 @@
             label = "Meta";
             bindings = <
     &trans              &trans              &trans              &trans              &trans              &trans                                  &trans              &trans              &trans              &trans              &trans              &trans
-    &trans              &sk LGUI            &sk LALT            &kp RET             &sk LSHFT           &trans                                  &trans              &sk RSHFT           &kp ESC             &sk RALT            &sk RGUI            &trans
-    &trans              &trans              &sl FUNC            &tog META           &sl NAVNUM          &trans                                  &trans              &sl NAVNUM          &tog META           &sl FUNC            &trans              &trans
+    &to GAMING          &sk LGUI            &sk LALT            &kp RET             &sk LSHFT           &trans                                  &trans              &sk RSHFT           &kp ESC             &sk RALT            &sk RGUI            &to GAMING
+    &bootloader         &trans              &sl FUNC            &tog META           &sl NAVNUM          &trans                                  &trans              &sl NAVNUM          &tog META           &sl FUNC            &trans              &bootloader
                                                                                     &trans              &trans                                  &trans              &trans
 	        >;
         };
@@ -75,9 +69,9 @@
         functions_layer {
             label = "Fun";
             bindings = <
-    &to BASEOLD         &kp LC(X)           &kp LC(V)           &kp UP              &kp LC(C)           &trans                                  &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &trans
+    &kp ESC             &kp LC(X)           &kp LC(V)           &kp UP              &kp LC(C)           &trans                                  &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &trans
     &kp LEFT            &kp LGUI            &kp LALT            &kp DOWN            &kp LSHFT           &kp RIGHT                               &kp C_VOL_DN        &kp F5              &kp F6              &kp F7              &kp F8              &trans
-    &bootloader         &trans              &trans              &tog FUNC           &trans              &kp LC(Z)                               &kp C_MUTE          &kp F1              &kp F2              &kp F3              &kp F4              &bootloader
+    &trans              &trans              &trans              &tog FUNC           &trans              &kp LC(Z)                               &kp C_MUTE          &kp F1              &kp F2              &kp F3              &kp F4              &trans
                                                                                     &trans              &trans                                  &trans              &kp SPC
             >;
         };
@@ -95,55 +89,10 @@
         gaming_number_layer {
             label = "GameNum";
             bindings = <
-    &to BASE            &kp F9              &kp F10             &kp F11             &kp F12             &trans                                  &trans              &kp N7              &kp N8              &kp N9              &trans              &to BASEOLD
-    &trans              &kp F5              &kp F6              &kp F7              &kp F8              &trans                                  &trans              &kp N4              &kp N5              &kp N6              &trans              &trans
-    &trans              &kp F1              &kp F2              &kp F3              &kp F4              &trans                                  &trans              &kp N1              &kp N2              &kp N3              &trans              &studio_unlock
+    &trans              &kp F9              &kp F10             &kp F11             &kp F12             &trans                                  &trans              &kp N7              &kp N8              &kp N9              &trans              &trans
+    &to BASE            &kp F5              &kp F6              &kp F7              &kp F8              &trans                                  &trans              &kp N4              &kp N5              &kp N6              &trans              &to BASE
+    &studio_unlock      &kp F1              &kp F2              &kp F3              &kp F4              &trans                                  &trans              &kp N1              &kp N2              &kp N3              &trans              &studio_unlock
                                                                                     &kp BKSP            &kp SPC                                 &kp RET             &kp N0
-            >;
-        };
-
-        base_layer_old {
-            label = "Base old";
-            bindings = <
-    &kp TAB             &hml LC(X) X        &hml LC(V) V        &kp L               &hml LC(C) C        &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &kp Y
-    &mo SYMOLD          &hml LGUI U         &hml LALT I         &ltlq NAVNUMOLD A   &hmlq LSHFT E       &kp O                                   &kp S               &hmrq RSHFT N       &ltrq NAVNUMOLD R   &hmr RALT T         &hmr RGUI D         &mo SYMOLD
-    &kp LSHFT           &kp RA(Y)           &kp RA(P)           &ltl FUNCOLD RA(Q)  &kp P               &hml LC(Z) Z                            &kp B               &kp M               &ltr FUNCOLD COMMA  &kp DOT             &kp J               &kp RSHFT
-                                                                                    &kp BKSP            &kp LCTRL                               &kp RCTRL           &kp SPC
-            >;
-
-             sensor-bindings = <
-                &inc_dec_kp UP DOWN
-                &inc_dec_kp UP DOWN
-            >;
-        };
-
-        symbols_layer_old {
-            label = "Sym old";
-            bindings = <
-    &kp TAB             &trans              &kp UNDER           &kp LBKT            &kp RBKT            &kp CARET                               &kp EXCL            &kp LT              &kp GT              &kp EQUAL           &kp AMPS            &kp AT
-    &to GAMING          &hml LGUI BSLH      &hml LALT FSLH      &kp LBRC            &hmlq LSHFT RBRC    &kp ASTRK                               &kp QMARK           &hmrq RSHFT LPAR    &kp RPAR            &hmr RALT MINUS     &hmr RGUI COLON     &to GAMING
-    &bootloader         &kp HASH            &kp DLLR            &kp PIPE            &kp TILDE           &kp GRAVE                               &kp PLUS            &kp PRCNT           &kp DQT             &kp SQT             &kp SEMI            &bootloader
-                                                                                    &kp DEL             &kp LCTRL                               &kp RCTRL           &kp SPC
-            >;
-        };
-
-        navnum_layer_old {
-            label = "NN old";
-            bindings = <
-    &kp TAB             &kp LC(X)           &kp LC(V)           &kp UP              &kp LC(C)           &kp PG_UP                               &kp KP_DIVIDE       &kp N7              &kp N8              &kp N9              &kp KP_MINUS        &kp COLON
-    &tog NAVNUMOLD      &kp C_AC_FORWARD    &kp LEFT            &kp DOWN            &kp RIGHT           &kp PG_DN                               &kp KP_MULTIPLY     &hmrq RSHFT N4      &kp N5              &hmr RALT N6        &hmr RGUI KP_PLUS   &tog NAVNUMOLD
-    &kp LSHFT           &kp C_AC_BACK       &kp HOME            &caps_word          &kp END             &kp LC(Z)                               &kp SPC             &kp N1              &kp N2              &kp N3              &kp DOT             &kp COMMA
-                                                                                    &kp BKSP            &kp LCTRL                               &kp RCTRL           &kp N0
-	        >;
-        };
-
-        functions_layer_old {
-            label = "Fun old";
-            bindings = <
-    &bt BT_SEL 0        &kp LC(X)           &kp LC(V)           &mmv MOVE_UP        &kp LC(C)           &msc SCRL_UP                            &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &bt BT_CLR
-    &bt BT_SEL 1        &kp C_BRI_UP        &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &kp ESC                                 &kp RET             &hmrq RSHFT F5      &kp F6              &hmr RALT F7        &hmr RGUI F8        &tog FUNCOLD
-    &bt BT_SEL 2        &kp C_BRI_DN        &mkp LCLK           &mkp MCLK           &mkp RCLK           &kp LC(Z)                               &kp C_MUTE          &kp F1              &kp F2              &kp F3              &kp F4              &studio_unlock
-                                                                                    &kp BKSP            &kp LCTRL                               &kp RCTRL           &kp SPC
             >;
         };
 	};
