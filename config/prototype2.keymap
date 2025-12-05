@@ -11,13 +11,15 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
-#define META 1
-#define SYM 2
-#define NAVNUM 3
-#define FUNC 4
-#define GAMING 5
-#define GAMINGNUM 6
+#define MAGICSTURDY 1
+#define META 2
+#define SYM 3
+#define NAVNUM 4
+#define FUNC 5
+#define GAMING 6
+#define GAMINGNUM 7
 
+#include "includes/mods.dtsi"
 
 &sk {
     quick-release;
@@ -27,7 +29,7 @@
     keymap {
         compatible = "zmk,keymap";
         base_layer {
-            label = "Base";
+            label = "Neo";
             bindings = <
     &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &key_repeat
     &sl SYM             &kp U               &kp I               &kp A               &kp E               &kp O                                   &kp S               &kp N               &kp R               &kp T               &kp D               &sl SYM
@@ -36,11 +38,21 @@
             >;
         };
 
+        magicsturdy_layer {
+            label = "Sturdy";
+            bindings = <
+    &kp TAB             &kp V               &kp M               &kp L               &kp C               &kp P                                   &kp B               &magic_key          &kp U               &kp O               &kp Q               &kp J
+    &sl SYM             &kp S               &kp T               &kp R               &kp D               &kp Y                                   &kp F               &kp N               &kp E               &kp A               &kp I               &sl SYM
+    &sk LSHFT           &kp X               &kp K               &sl META            &kp G               &kp W                                   &kp Z               &kp H               &sl META            &kp DOT             &kp COMMA           &sk RSHFT
+                                                                                    &kp BKSP            &sk LCTRL                               &sk RCTRL           &kp SPC
+            >;
+        };
+
         meta_layer {
             label = "Meta";
             bindings = <
-    &trans              &trans              &trans              &trans              &trans              &trans                                  &trans              &trans              &trans              &trans              &trans              &trans
-    &to GAMING          &sk LGUI            &sk LALT            &kp RET             &sk LSHFT           &trans                                  &trans              &sk RSHFT           &kp ESC             &sk RALT            &sk RGUI            &to GAMING
+    &to GAMING          &trans              &trans              &trans              &trans              &trans                                  &trans              &trans              &trans              &trans              &trans              &to GAMING
+    &trans              &sk LGUI            &sk LALT            &kp RET             &sk LSHFT           &trans                                  &trans              &sk RSHFT           &kp ESC             &sk RALT            &sk RGUI            &trans
     &bootloader         &trans              &sl FUNC            &tog META           &sl NAVNUM          &trans                                  &trans              &sl NAVNUM          &tog META           &sl FUNC            &trans              &bootloader
                                                                                     &trans              &trans                                  &trans              &trans
 	        >;
@@ -89,8 +101,8 @@
         gaming_number_layer {
             label = "GameNum";
             bindings = <
-    &trans              &kp F9              &kp F10             &kp F11             &kp F12             &trans                                  &trans              &kp N7              &kp N8              &kp N9              &trans              &trans
-    &to BASE            &kp F5              &kp F6              &kp F7              &kp F8              &trans                                  &trans              &kp N4              &kp N5              &kp N6              &trans              &to BASE
+    &to BASE            &kp F9              &kp F10             &kp F11             &kp F12             &trans                                  &trans              &kp N7              &kp N8              &kp N9              &trans              &to BASE
+    &to MAGICSTURDY     &kp F5              &kp F6              &kp F7              &kp F8              &trans                                  &trans              &kp N4              &kp N5              &kp N6              &trans              &to MAGICSTURDY
     &studio_unlock      &kp F1              &kp F2              &kp F3              &kp F4              &trans                                  &trans              &kp N1              &kp N2              &kp N3              &trans              &studio_unlock
                                                                                     &kp BKSP            &kp SPC                                 &kp RET             &kp N0
             >;

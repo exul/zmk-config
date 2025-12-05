@@ -1,0 +1,29 @@
+/ {
+    behaviors {
+        magic_key: magic_key {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&key_repeat>;
+
+            ak_a_o { trigger-keys = <A>; max-prior-idle-ms = <1000>; bindings = <&kp O>; };
+            ak_c_y { trigger-keys = <C>; max-prior-idle-ms = <1000>; bindings = <&kp Y>; };
+            ak_d_y { trigger-keys = <D>; max-prior-idle-ms = <1000>; bindings = <&kp Y>; };
+            ak_e_u { trigger-keys = <E>; max-prior-idle-ms = <1000>; bindings = <&kp U>; };
+            ak_g_y { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp Y>; };
+            ak_i_on { trigger-keys = <I>; max-prior-idle-ms = <1000>; bindings = <&kp O &kp N>; };
+            ak_l_k { trigger-keys = <L>; max-prior-idle-ms = <1000>; bindings = <&kp K>; };
+            ak_m_ent { trigger-keys = <M>; max-prior-idle-ms = <1000>; bindings = <&kp E &kp N &kp T>; };
+            ak_n_ion { trigger-keys = <N>; max-prior-idle-ms = <1000>; bindings = <&kp I &kp O &kp N>; };
+            ak_o_a { trigger-keys = <O>; max-prior-idle-ms = <1000>; bindings = <&kp A>; };
+            ak_p_y { trigger-keys = <P>; max-prior-idle-ms = <1000>; bindings = <&kp Y>; };
+            ak_q_uen { trigger-keys = <Q>; max-prior-idle-ms = <1000>; bindings = <&kp U &kp E &kp N>; };
+            ak_r_l { trigger-keys = <R>; max-prior-idle-ms = <1000>; bindings = <&kp L>; };
+            ak_s_k { trigger-keys = <S>; max-prior-idle-ms = <1000>; bindings = <&kp K>; };
+            ak_t_ment { trigger-keys = <T>; max-prior-idle-ms = <1000>; bindings = <&kp M &kp E &kp N &kp T>; };
+            ak_u_e { trigger-keys = <U>; max-prior-idle-ms = <1000>; bindings = <&kp E>; };
+            ak_y_p { trigger-keys = <Y>; max-prior-idle-ms = <1000>; bindings = <&kp P>; };
+            ak_space_the { trigger-keys = <SPC>; max-prior-idle-ms = <1000>; bindings = <&kp T &kp H &kp E>; };
+            ak_dot_slash { trigger-keys = <DOT>; max-prior-idle-ms = <1000>; bindings = <&kp FSLH>; };
+        };
+    };
+};
