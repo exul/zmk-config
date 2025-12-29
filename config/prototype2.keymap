@@ -33,7 +33,7 @@
             bindings = <
     &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &key_repeat
     &sl SYM             &kp U               &kp I               &kp A               &kp E               &kp O                                   &kp S               &kp N               &kp R               &kp T               &kp D               &sl SYM
-    &sk LSHFT           &kp Y               &kp COMMA           &sl META            &kp P               &kp Z                                   &kp B               &kp M               &sl META            &kp DOT             &kp J               &sk RSHFT
+    &sk LSHFT           &kp Y               &kp J               &sl META            &kp P               &kp Z                                   &kp B               &kp M               &sl META            &kp DOT             &kp COMMA           &sk RSHFT
                                                                                     &kp BKSP            &sk LCTRL                               &sk RCTRL           &kp SPC
             >;
         };
