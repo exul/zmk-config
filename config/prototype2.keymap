@@ -41,9 +41,9 @@
         magicsturdy_layer {
             label = "Sturdy";
             bindings = <
-    &kp TAB             &kp V               &kp M               &kp L               &kp C               &kp P                                   &kp B               &magic_key          &kp U               &kp O               &kp Q               &kp J
+    &kp TAB             &kp V               &kp M               &kp L               &kp C               &kp P                                   &kp B               &magic_key          &kp U               &kp O               &kp Q               &key_repeat
     &sl SYM             &kp S               &kp T               &kp R               &kp D               &kp Y                                   &kp F               &kp N               &kp E               &kp A               &kp I               &sl SYM
-    &sk LSHFT           &kp X               &kp K               &sl META            &kp G               &kp W                                   &kp Z               &kp H               &sl META            &kp DOT             &kp COMMA           &sk RSHFT
+    &sk LSHFT           &kp X               &kp K               &sl META            &kp G               &kp W                                   &kp Z               &kp H               &sl META            &kp DOT             &kp J               &sk RSHFT
                                                                                     &kp BKSP            &trans                                  &trans              &kp SPC
             >;
         };
