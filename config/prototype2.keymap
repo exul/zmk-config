@@ -34,7 +34,7 @@
     &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &key_repeat
     &sl SYM             &kp U               &kp I               &kp A               &kp E               &kp O                                   &kp S               &kp N               &kp R               &kp T               &kp D               &sl SYM
     &kp LSHFT           &kp Y               &trans              &sl META            &kp P               &kp Z                                   &kp B               &kp M               &sl META            &kp DOT             &kp J               &kp RSHFT
-                                                                                    &kp BKSP            &kp LCTRL                               &kp RCTRL           &kp SPC
+                                                                                    &kp SPC             &kp LCTRL                               &kp RCTRL           &kp SPC
             >;
         };
 
@@ -44,17 +44,17 @@
     &kp TAB             &kp V               &kp M               &kp L               &kp C               &kp P                                   &kp B               &magic_key          &kp U               &kp O               &kp Q               &key_repeat
     &sl SYM             &kp S               &kp T               &kp R               &kp D               &kp Y                                   &kp F               &kp N               &kp E               &kp A               &kp I               &sl SYM
     &kp LSHFT           &kp X               &kp K               &sl META            &kp G               &kp W                                   &kp Z               &kp H               &sl META            &kp DOT             &kp J               &kp RSHFT
-                                                                                    &kp BKSP            &kp LCTRL                               &kp RCTRL           &kp SPC
+                                                                                    &kp SPC             &kp LCTRL                               &kp RCTRL           &kp SPC
             >;
         };
 
         meta_layer {
             label = "Meta";
             bindings = <
-    &trans              &trans              &trans              &trans              &trans              &trans                                  &trans              &trans              &trans              &trans              &trans              &trans
+    &trans              &trans              &trans              &kp BKSP            &trans              &trans                                  &trans              &trans              &kp BKSP            &trans              &trans              &trans
     &trans              &sk LGUI            &sk LALT            &kp RET             &sk LSHFT           &trans                                  &trans              &sk RSHFT           &kp ESC             &sk LALT            &sk RGUI            &trans
     &trans              &trans              &sl FUNC            &tog META           &sl NAVNUM          &trans                                  &trans              &sl NAVNUM          &tog META           &sl FUNC            &trans              &trans
-                                                                                    &trans              &trans                                  &trans              &trans
+                                                                                    &trans              &sk LCTRL                               &sk RCTRL           &trans
 	        >;
         };
 
@@ -64,27 +64,27 @@
     &kp GRAVE           &kp EXCL            &kp EQUAL           &kp LT              &kp GT              &kp PIPE                                &kp AMPS            &kp FSLH            &kp RA(Y)           &kp RA(P)           &kp BSLH            &kp TILDE
     &trans              &kp COLON           &kp MINUS           &kp LPAR            &kp RPAR            &kp UNDER                               &kp QMARK           &kp LBRC            &kp RBRC            &kp RA(Q)           &kp SEMI            &trans
     &trans              &kp PRCNT           &kp DLLR            &kp SQT             &kp DQT             &kp HASH                                &kp AT              &kp LBKT            &kp RBKT            &kp COMMA           &kp CARET           &trans
-                                                                                    &kp DEL             &trans                                  &trans              &trans
+                                                                                    &kp DEL             &trans                                  &trans              &kp DEL
             >;
         };
 
         navnum_layer {
             label = "NavNum";
             bindings = <
-    &kp ESC             &kp LC(V)           &trans              &kp UP              &kp LC(C)           &kp PG_UP                               &kp KP_DIVIDE       &kp N7              &kp N8              &kp N9              &kp KP_MINUS        &kp COLON
-    &kp C_AC_BACK       &trans              &kp LEFT            &kp DOWN            &kp RIGHT           &kp C_AC_FORWARD                        &kp KP_MULTIPLY     &kp N4              &kp N5              &kp N6              &kp KP_PLUS         &kp RET
-    &trans              &kp LC(X)           &kp HOME            &tog NAVNUM         &kp END             &kp PG_DN                               &kp SPC             &kp N1              &kp N2              &kp N3              &kp DOT             &trans
-                                                                                    &kp BKSP            &trans                                  &trans              &kp N0
+    &kp ESC             &kp LC(V)           &trans              &kp UP              &kp LC(C)           &kp PG_UP                               &kp KP_DIVIDE       &kp N7              &kp N8              &kp N9              &kp KP_MINUS        &kp BKSP
+    &kp HOME            &trans              &kp LEFT            &kp DOWN            &kp RIGHT           &kp END                                 &kp KP_MULTIPLY     &kp N4              &kp N5              &kp N6              &kp KP_PLUS         &kp RET
+    &trans              &kp LC(X)           &kp C_AC_BACK       &tog NAVNUM         &kp C_AC_FORWARD    &kp PG_DN                               &kp COLON           &kp N1              &kp N2              &kp N3              &kp DOT             &trans
+                                                                                    &kp SPC             &trans                                  &trans              &kp N0
 	        >;
         };
 
         functions_layer {
             label = "Fun";
             bindings = <
-    &kp ESC             &kp LC(V)           &trans              &kp UP              &kp LC(C)           &trans                                  &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &trans
+    &kp ESC             &kp LC(V)           &trans              &kp UP              &kp LC(C)           &trans                                  &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &kp BKSP
     &kp LEFT            &kp LGUI            &kp LALT            &kp DOWN            &kp LSHFT           &kp RIGHT                               &kp C_MUTE          &kp F5              &kp F6              &kp F7              &kp F8              &to GAMING
-    &trans              &kp LC(X)           &trans              &tog FUNC           &trans              &trans                                  &kp C_VOL_DN        &kp F1              &kp F2              &kp F3              &kp F4              &trans
-                                                                                    &trans              &trans                                  &trans              &kp SPC
+    &trans              &kp LC(X)           &kp C_AC_BACK       &tog FUNC           &kp C_AC_FORWARD    &trans                                  &kp C_VOL_DN        &kp F1              &kp F2              &kp F3              &kp F4              &trans
+                                                                                    &kp SPC             &trans                                  &trans              &kp SPC
             >;
         };
 
