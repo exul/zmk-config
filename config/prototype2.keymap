@@ -33,7 +33,7 @@
             bindings = <
     &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &key_repeat
     &sl SYM             &kp U               &kp I               &kp A               &kp E               &kp O                                   &kp S               &kp N               &kp R               &kp T               &kp D               &sl SYM
-    &kp LSHFT           &kp Y               &trans              &sl META            &kp P               &kp Z                                   &kp B               &kp M               &sl META            &kp DOT             &kp J               &kp RSHFT
+    &kp LSHFT           &kp Y               &trans              &mo META            &kp P               &kp Z                                   &kp B               &kp M               &mo META            &kp DOT             &kp J               &kp RSHFT
                                                                                     &kp SPC             &kp LCTRL                               &kp RCTRL           &kp SPC
             >;
         };
@@ -43,7 +43,7 @@
             bindings = <
     &kp TAB             &kp V               &kp M               &kp L               &kp C               &kp P                                   &kp B               &magic_key          &kp U               &kp O               &kp Q               &key_repeat
     &sl SYM             &kp S               &kp T               &kp R               &kp D               &kp Y                                   &kp F               &kp N               &kp E               &kp A               &kp I               &sl SYM
-    &kp LSHFT           &kp X               &kp K               &sl META            &kp G               &kp W                                   &kp Z               &kp H               &sl META            &kp DOT             &kp J               &kp RSHFT
+    &kp LSHFT           &kp X               &kp K               &mo META            &kp G               &kp W                                   &kp Z               &kp H               &mo META            &kp DOT             &kp J               &kp RSHFT
                                                                                     &kp SPC             &kp LCTRL                               &kp RCTRL           &kp SPC
             >;
         };
