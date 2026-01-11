@@ -31,7 +31,7 @@
         base_layer {
             label = "Neo";
             bindings = <
-    &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &key_repeat
+    &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &kp SQT
     &sl SYM             &kp U               &kp I               &kp A               &kp E               &kp O                                   &kp S               &kp N               &kp R               &kp T               &kp D               &sl SYM
     &kp LSHFT           &kp Y               &trans              &mo META            &kp P               &kp Z                                   &kp B               &kp M               &mo META            &kp DOT             &kp J               &kp RSHFT
                                                                                     &kp SPC             &kp LCTRL                               &kp RCTRL           &kp SPC
@@ -41,7 +41,7 @@
         magicsturdy_layer {
             label = "Sturdy";
             bindings = <
-    &kp TAB             &kp V               &kp M               &kp L               &kp C               &kp P                                   &kp B               &magic_key          &kp U               &kp O               &kp Q               &key_repeat
+    &kp TAB             &kp V               &kp M               &kp L               &kp C               &kp P                                   &kp B               &magic_key          &kp U               &kp O               &kp Q               &kp SQT
     &sl SYM             &kp S               &kp T               &kp R               &kp D               &kp Y                                   &kp F               &kp N               &kp E               &kp A               &kp I               &sl SYM
     &kp LSHFT           &kp X               &kp K               &mo META            &kp G               &kp W                                   &kp Z               &kp H               &mo META            &kp DOT             &kp J               &kp RSHFT
                                                                                     &kp SPC             &kp LCTRL                               &kp RCTRL           &kp SPC
@@ -63,7 +63,7 @@
             bindings = <
     &kp GRAVE           &kp EXCL            &kp EQUAL           &kp LT              &kp GT              &kp PIPE                                &kp AMPS            &kp FSLH            &kp RA(Y)           &kp RA(P)           &kp BSLH            &kp TILDE
     &trans              &kp COLON           &kp MINUS           &kp LPAR            &kp RPAR            &kp UNDER                               &kp QMARK           &kp LBRC            &kp RBRC            &kp RA(Q)           &kp SEMI            &trans
-    &trans              &kp PRCNT           &kp DLLR            &kp SQT             &kp DQT             &kp HASH                                &kp AT              &kp LBKT            &kp RBKT            &kp COMMA           &kp CARET           &trans
+    &trans              &kp PRCNT           &kp COMMA           &kp DLLR            &kp DQT             &kp HASH                                &kp AT              &kp LBKT            &kp RBKT            &kp COMMA           &kp CARET           &trans
                                                                                     &kp DEL             &trans                                  &trans              &kp DEL
             >;
         };
