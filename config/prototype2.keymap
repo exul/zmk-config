@@ -61,9 +61,9 @@
         symbols_layer {
             label = "Sym";
             bindings = <
-    &kp GRAVE           &kp EXCL            &kp EQUAL           &kp LT              &kp GT              &kp PIPE                                &kp AMPS            &kp FSLH            &kp RA(Y)           &kp RA(P)           &kp BSLH            &kp TILDE
-    &trans              &kp COLON           &kp MINUS           &kp LPAR            &kp RPAR            &kp UNDER                               &kp QMARK           &kp LBRC            &kp RBRC            &kp RA(Q)           &kp SEMI            &trans
-    &trans              &kp PRCNT           &kp COMMA           &kp DLLR            &kp DQT             &kp HASH                                &kp AT              &kp LBKT            &kp RBKT            &kp COMMA           &kp CARET           &trans
+    &kp CARET           &kp EXCL            &kp LT              &kp EQUAL           &kp GT              &kp PIPE                                &kp AMPS            &kp FSLH            &kp RA(Y)           &kp RA(P)           &kp BSLH            &kp TILDE
+    &trans              &kp COLON           &kp MINUS           &kp LPAR            &kp RPAR            &kp UNDER                               &kp QMARK           &kp LBRC            &kp RBRC            &kp RA(Q)           &kp DQT             &trans
+    &trans              &kp SEMI            &kp LBKT            &kp COMMA           &kp RBKT            &kp HASH                                &kp AT              &kp DLLR            &kp COMMA           &kp PRCNT           &kp GRAVE           &trans
                                                                                     &kp DEL             &trans                                  &trans              &kp DEL
             >;
         };
