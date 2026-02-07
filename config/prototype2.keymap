@@ -71,9 +71,9 @@
         navnum_layer {
             label = "NavNum";
             bindings = <
-    &kp ESC             &kp LC(V)           &trans              &kp UP              &kp LC(C)           &kp PG_UP                               &kp KP_DIVIDE       &kp N7              &kp N8              &kp N9              &kp KP_MINUS        &kp BKSP
+    &kp ESC             &trans              &trans              &kp UP              &kp BKSP            &kp PG_UP                               &kp KP_DIVIDE       &kp N7              &kp N8              &kp N9              &kp KP_MINUS        &trans
     &kp HOME            &trans              &kp LEFT            &kp DOWN            &kp RIGHT           &kp END                                 &kp KP_MULTIPLY     &kp N4              &kp N5              &kp N6              &kp KP_PLUS         &kp RET
-    &trans              &kp LC(X)           &kp C_AC_BACK       &tog NAVNUM         &kp C_AC_FORWARD    &kp PG_DN                               &kp COLON           &kp N1              &kp N2              &kp N3              &kp DOT             &trans
+    &trans              &trans              &kp C_AC_BACK       &tog NAVNUM         &kp C_AC_FORWARD    &kp PG_DN                               &kp COLON           &kp N1              &kp N2              &kp N3              &kp DOT             &trans
                                                                                     &kp SPC             &trans                                  &trans              &kp N0
 	        >;
         };
@@ -81,9 +81,9 @@
         functions_layer {
             label = "Fun";
             bindings = <
-    &kp ESC             &kp LC(V)           &trans              &kp UP              &kp LC(C)           &trans                                  &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &kp BKSP
+    &kp ESC             &trans              &trans              &kp UP              &kp BKSP            &trans                                  &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &trans
     &kp LEFT            &kp LGUI            &kp LALT            &kp DOWN            &kp LSHFT           &kp RIGHT                               &kp C_MUTE          &kp F5              &kp F6              &kp F7              &kp F8              &to GAMING
-    &trans              &kp LC(X)           &kp C_AC_BACK       &tog FUNC           &kp C_AC_FORWARD    &trans                                  &kp C_VOL_DN        &kp F1              &kp F2              &kp F3              &kp F4              &trans
+    &trans              &trans              &kp C_AC_BACK       &tog FUNC           &kp C_AC_FORWARD    &trans                                  &kp C_VOL_DN        &kp F1              &kp F2              &kp F3              &kp F4              &trans
                                                                                     &kp SPC             &trans                                  &trans              &kp SPC
             >;
         };
