@@ -53,7 +53,7 @@
             bindings = <
     &trans              &trans              &trans              &trans              &kp BKSP            &trans                                  &trans              &kp BKSP            &trans              &trans              &trans              &trans
     &trans              &sk LGUI            &sk LALT            &kp RET             &sk LSHFT           &trans                                  &trans              &sk RSHFT           &kp ESC             &sk LALT            &sk RGUI            &trans
-    &trans              &caps_word          &mo FUNC            &tog META           &mo NAVNUM          &trans                                  &trans              &mo NAVNUM          &tog META           &mo FUNC            &caps_word          &trans
+    &trans              &trans              &mo FUNC            &tog META           &mo NAVNUM          &trans                                  &trans              &mo NAVNUM          &tog META           &mo FUNC            &trans              &trans
                                                                                     &trans              &sk LCTRL                               &sk RCTRL           &trans
 	        >;
         };
