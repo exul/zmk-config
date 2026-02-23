@@ -21,10 +21,6 @@
 
 #include "includes/mods.dtsi"
 
-&sk {
-    quick-release;
-};
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -44,7 +40,7 @@
     &kp TAB             &kp V               &kp M               &kp L               &kp C               &kp P                                   &kp B               &magic_key          &kp U               &kp O               &kp Q               &kp SQT
     &sl SYM             &kp S               &kp T               &kp R               &kp D               &kp Y                                   &kp F               &kp N               &kp E               &kp A               &kp I               &sl SYM
     &kp LSHFT           &kp X               &kp K               &mo META            &kp G               &kp W                                   &kp Z               &kp H               &mo META            &kp DOT             &kp J               &kp RSHFT
-                                                                                    &kp SPC             &kp LCTRL                               &kp RCTRL           &kp SPC
+                                                                                    &kp SPC             &trans                                  &trans              &kp SPC
             >;
         };
 
@@ -52,9 +48,9 @@
             label = "Meta";
             bindings = <
     &trans              &trans              &trans              &trans              &kp BKSP            &trans                                  &trans              &kp BKSP            &trans              &trans              &trans              &trans
-    &trans              &sk LGUI            &sk LALT            &kp RET             &sk LSHFT           &trans                                  &trans              &sk RSHFT           &kp ESC             &sk LALT            &sk RGUI            &trans
+    &trans              &kp LGUI            &kp LALT            &kp RET             &kp LSHFT           &trans                                  &trans              &kp RSHFT           &kp ESC             &kp LALT            &kp RGUI            &trans
     &trans              &trans              &mo FUNC            &tog META           &mo NAVNUM          &trans                                  &trans              &mo NAVNUM          &tog META           &mo FUNC            &trans              &trans
-                                                                                    &trans              &sk LCTRL                               &sk RCTRL           &trans
+                                                                                    &trans              &trans                                  &trans              &trans
 	        >;
         };
 
