@@ -21,13 +21,13 @@ include:
   - board: xiao_ble//zmk
     shield: prototype2_dongle prospector_adapter
     artifact-name: prototype2_dongle
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: prototype2_left
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: prototype2_left
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: prototype2_right
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: prototype2_right
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: settings_reset
