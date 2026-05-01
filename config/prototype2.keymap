@@ -29,7 +29,7 @@
             bindings = <
     &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &kp SQT
     &sl SYM             &kp U               &kp I               &kp A               &kp E               &kp O                                   &kp S               &kp N               &kp R               &kp T               &kp D               &sl SYM
-    &kp LSHFT           &kp Y               &trans              &mo META            &kp P               &kp Z                                   &kp B               &kp M               &mo META            &kp DOT             &kp J               &kp RSHFT
+    &kp LSHFT           &kp Y               &mo META            &trans              &kp P               &kp Z                                   &kp B               &kp M               &kp J               &mo META            &kp DOT             &kp RSHFT
                                                                                     &kp SPC             &kp LCTRL                               &kp RCTRL           &kp SPC
             >;
         };
@@ -49,7 +49,7 @@
             bindings = <
     &trans              &trans              &trans              &trans              &kp BKSP            &trans                                  &trans              &kp BKSP            &trans              &trans              &trans              &trans
     &trans              &kp LGUI            &kp LALT            &kp RET             &kp LSHFT           &trans                                  &trans              &kp RSHFT           &kp ESC             &kp LALT            &kp RGUI            &trans
-    &trans              &trans              &mo FUNC            &tog META           &mo NAVNUM          &trans                                  &trans              &mo NAVNUM          &tog META           &mo FUNC            &trans              &trans
+    &trans              &trans              &tog META           &mo NAVNUM          &mo FUNC            &trans                                  &trans              &mo FUNC            &mo NAVNUM          &tog META           &trans              &trans
                                                                                     &trans              &trans                                  &trans              &trans
 	        >;
         };
