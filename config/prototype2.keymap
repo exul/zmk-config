@@ -12,12 +12,13 @@
 
 #define BASE 0
 #define GALLIUM 1
-#define META 2
-#define SYM 3
-#define NAVNUM 4
-#define FUNC 5
-#define GAMING 6
-#define GAMINGNUM 7
+#define STURDY 2
+#define META 3
+#define SYM 4
+#define NAVNUM 5
+#define FUNC 6
+#define GAMING 7
+#define GAMINGNUM 8
 
 #include "includes/mods.dtsi"
 
@@ -40,6 +41,16 @@
     &kp TAB             &kp B               &kp L               &kp D               &kp C               &kp V                                   &kp J               &kp Y               &kp O               &kp U               &kp Q               &kp SQT
     &sl SYM             &kp N               &kp R               &kp T               &kp S               &kp G                                   &kp P               &kp H               &kp A               &kp E               &kp I               &sl SYM
     &kp LSHFT           &kp X               &mo META            &kp M               &kp W               &kp Z                                   &kp Z               &kp H               &kp DOT             &mo META            &magic_key          &kp RSHFT
+                                                                                    &kp SPC             &trans                                  &trans              &kp SPC
+            >;
+        };
+
+        sturdy_layer {
+            label = "Sturdy";
+            bindings = <
+    &kp TAB             &kp V               &kp M               &kp L               &kp C               &kp P                                   &kp B               &magic_key          &kp U               &kp O               &kp Q               &kp SQT
+    &sl SYM             &kp S               &kp T               &kp R               &kp D               &kp Y                                   &kp F               &kp N               &kp A               &kp E               &kp I               &sl SYM
+    &kp LSHFT           &kp X               &mo META            &kp J               &kp G               &kp W                                   &kp Z               &kp H               &kp DOT             &mo META            &kp K               &kp RSHFT
                                                                                     &kp SPC             &trans                                  &trans              &kp SPC
             >;
         };
@@ -97,7 +108,7 @@
         gaming_number_layer {
             label = "GameNum";
             bindings = <
-    &to BASE            &kp F9              &kp F10             &kp F11             &kp F12             &trans                                  &trans              &kp N7              &kp N8              &kp N9              &trans              &to BASE
+    &to STURDY          &kp F9              &kp F10             &kp F11             &kp F12             &trans                                  &trans              &kp N7              &kp N8              &kp N9              &trans              &to BASE
     &to GALLIUM         &kp F5              &kp F6              &kp F7              &kp F8              &trans                                  &trans              &kp N4              &kp N5              &kp N6              &trans              &to GALLIUM
     &studio_unlock      &kp F1              &kp F2              &kp F3              &kp F4              &trans                                  &trans              &kp N1              &kp N2              &kp N3              &trans              &studio_unlock
                                                                                     &kp BKSP            &kp SPC                                 &kp RET             &kp N0
