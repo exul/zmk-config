@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
-#define MAGICSTURDY 1
+#define GALLIUM 1
 #define META 2
 #define SYM 3
 #define NAVNUM 4
@@ -29,17 +29,17 @@
             bindings = <
     &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &kp SQT
     &sl SYM             &kp U               &kp I               &kp A               &kp E               &kp O                                   &kp S               &kp N               &kp R               &kp T               &kp D               &sl SYM
-    &kp LSHFT           &kp Y               &mo META            &trans              &kp P               &kp Z                                   &kp B               &kp M               &kp J               &mo META            &kp DOT             &kp RSHFT
+    &kp LSHFT           &kp Y               &mo META            &trans              &kp P               &kp Z                                   &kp B               &kp M               &kp DOT            &mo META             &kp J               &kp RSHFT
                                                                                     &kp SPC             &kp LCTRL                               &kp RCTRL           &kp SPC
             >;
         };
 
-        magicsturdy_layer {
-            label = "Sturdy";
+        gallium_layer {
+            label = "Gallium";
             bindings = <
-    &kp TAB             &kp V               &kp M               &kp L               &kp C               &kp P                                   &kp B               &magic_key          &kp U               &kp O               &kp Q               &kp SQT
-    &sl SYM             &kp S               &kp T               &kp R               &kp D               &kp Y                                   &kp F               &kp N               &kp E               &kp A               &kp I               &sl SYM
-    &kp LSHFT           &kp X               &kp K               &mo META            &kp G               &kp W                                   &kp Z               &kp H               &mo META            &kp DOT             &kp J               &kp RSHFT
+    &kp TAB             &kp B               &kp L               &kp D               &kp C               &kp V                                   &kp J               &kp Y               &kp O               &kp U               &kp Q               &kp SQT
+    &sl SYM             &kp N               &kp R               &kp T               &kp S               &kp G                                   &kp P               &kp H               &kp A               &kp E               &kp I               &sl SYM
+    &kp LSHFT           &kp X               &mo META            &kp M               &kp W               &kp Z                                   &kp Z               &kp H               &kp DOT             &mo META            &magic_key          &kp RSHFT
                                                                                     &kp SPC             &trans                                  &trans              &kp SPC
             >;
         };
@@ -98,7 +98,7 @@
             label = "GameNum";
             bindings = <
     &to BASE            &kp F9              &kp F10             &kp F11             &kp F12             &trans                                  &trans              &kp N7              &kp N8              &kp N9              &trans              &to BASE
-    &to MAGICSTURDY     &kp F5              &kp F6              &kp F7              &kp F8              &trans                                  &trans              &kp N4              &kp N5              &kp N6              &trans              &to MAGICSTURDY
+    &to GALLIUM         &kp F5              &kp F6              &kp F7              &kp F8              &trans                                  &trans              &kp N4              &kp N5              &kp N6              &trans              &to GALLIUM
     &studio_unlock      &kp F1              &kp F2              &kp F3              &kp F4              &trans                                  &trans              &kp N1              &kp N2              &kp N3              &trans              &studio_unlock
                                                                                     &kp BKSP            &kp SPC                                 &kp RET             &kp N0
             >;

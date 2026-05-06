@@ -34,7 +34,7 @@
         combo_caps_word {
             timeout-ms = <150>;
             key-positions = <24 35>;
-            layers = <BASE MAGICSTURDY>;
+            layers = <BASE GALLIUM>;
             bindings = <&caps_word>;
         };
     };
