@@ -57,8 +57,8 @@
         symbols_layer {
             label = "Sym";
             bindings = <
-    &kp CARET           &kp EXCL            &kp LT              &kp EQUAL           &kp GT              &kp PIPE                                &kp AMPS            &kp FSLH            &kp RA(Y)           &kp RA(P)           &kp BSLH            &kp TILDE
-    &trans              &kp COLON           &kp MINUS           &kp LPAR            &kp RPAR            &kp UNDER                               &kp QMARK           &kp LBRC            &kp RBRC            &kp RA(Q)           &kp DQT             &trans
+    &kp CARET           &kp EXCL            &kp LT              &kp EQUAL           &kp GT              &kp PIPE                                &kp AMPS            &kp FSLH            &kp RA(P)           &kp RA(Y)           &kp BSLH            &kp TILDE
+    &trans              &kp COLON           &kp LPAR            &kp MINUS           &kp RPAR            &kp UNDER                               &kp QMARK           &kp LBRC            &kp RA(Q)           &kp RBRC            &kp DQT             &trans
     &trans              &kp SEMI            &kp LBKT            &kp COMMA           &kp RBKT            &kp HASH                                &kp AT              &kp DLLR            &kp COMMA           &kp PRCNT           &kp GRAVE           &trans
                                                                                     &kp DEL             &trans                                  &trans              &kp DEL
             >;
@@ -67,9 +67,9 @@
         navnum_layer {
             label = "NavNum";
             bindings = <
-    &kp ESC             &trans              &trans              &kp UP              &kp BKSP            &kp PG_UP                               &kp KP_DIVIDE       &kp N7              &kp N8              &kp N9              &kp KP_MINUS        &trans
+    &tog NAVNUM         &trans              &trans              &kp UP              &kp BKSP            &kp PG_UP                               &kp KP_DIVIDE       &kp N7              &kp N8              &kp N9              &kp KP_MINUS        &tog NAVNUM
     &kp HOME            &trans              &kp LEFT            &kp DOWN            &kp RIGHT           &kp END                                 &kp KP_MULTIPLY     &kp N4              &kp N5              &kp N6              &kp KP_PLUS         &kp RET
-    &trans              &trans              &kp C_AC_BACK       &tog NAVNUM         &kp C_AC_FORWARD    &kp PG_DN                               &kp COLON           &kp N1              &kp N2              &kp N3              &kp DOT             &trans
+    &trans              &trans              &kp C_AC_BACK       &trans              &kp C_AC_FORWARD    &kp PG_DN                               &kp COLON           &kp N1              &kp N2              &kp N3              &kp DOT             &trans
                                                                                     &kp SPC             &trans                                  &trans              &kp N0
 	        >;
         };
@@ -77,9 +77,9 @@
         functions_layer {
             label = "Fun";
             bindings = <
-    &kp ESC             &trans              &trans              &kp UP              &kp BKSP            &trans                                  &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &trans
+    &tog FUNC           &trans              &trans              &kp UP              &kp BKSP            &trans                                  &kp C_VOL_UP        &kp F9              &kp F10             &kp F11             &kp F12             &tog FUNC
     &kp LEFT            &kp LGUI            &kp LALT            &kp DOWN            &kp LSHFT           &kp RIGHT                               &kp C_MUTE          &kp F5              &kp F6              &kp F7              &kp F8              &to GAMING
-    &trans              &trans              &kp C_AC_BACK       &tog FUNC           &kp C_AC_FORWARD    &trans                                  &kp C_VOL_DN        &kp F1              &kp F2              &kp F3              &kp F4              &trans
+    &trans              &trans              &kp C_AC_BACK       &trans              &kp C_AC_FORWARD    &trans                                  &kp C_VOL_DN        &kp F1              &kp F2              &kp F3              &kp F4              &trans
                                                                                     &kp SPC             &trans                                  &trans              &kp SPC
             >;
         };
