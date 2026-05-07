@@ -30,7 +30,7 @@
             bindings = <
     &kp TAB             &kp X               &kp V               &kp L               &kp C               &kp W                                   &kp K               &kp H               &kp G               &kp F               &kp Q               &kp SQT
     &sl SYM             &kp U               &kp I               &kp A               &kp E               &kp O                                   &kp S               &kp N               &kp R               &kp T               &kp D               &sl SYM
-    &kp LSHFT           &kp Y               &mo META            &trans              &kp P               &kp Z                                   &kp B               &kp M               &kp DOT            &mo META             &kp J               &kp RSHFT
+    &kp LSHFT           &kp Y               &mo META            &trans              &kp P               &kp Z                                   &kp B               &kp M               &kp J               &mo META            &kp DOT             &kp RSHFT
                                                                                     &kp SPC             &kp LCTRL                               &kp RCTRL           &kp SPC
             >;
         };
@@ -40,7 +40,7 @@
             bindings = <
     &kp TAB             &kp B               &kp L               &kp D               &kp C               &kp V                                   &kp J               &kp Y               &kp O               &kp U               &kp Q               &kp SQT
     &sl SYM             &kp N               &kp R               &kp T               &kp S               &kp G                                   &kp P               &kp H               &kp A               &kp E               &kp I               &sl SYM
-    &kp LSHFT           &kp X               &mo META            &kp M               &kp W               &kp Z                                   &kp Z               &kp H               &kp DOT             &mo META            &magic_key          &kp RSHFT
+    &kp LSHFT           &kp X               &mo META            &kp M               &kp W               &kp Z                                   &kp Z               &kp H               &magic_key          &mo META            &kp DOT             &kp RSHFT
                                                                                     &kp SPC             &trans                                  &trans              &kp SPC
             >;
         };
@@ -50,7 +50,7 @@
             bindings = <
     &kp TAB             &kp V               &kp M               &kp L               &kp C               &kp P                                   &kp B               &magic_key          &kp U               &kp O               &kp Q               &kp SQT
     &sl SYM             &kp S               &kp T               &kp R               &kp D               &kp Y                                   &kp F               &kp N               &kp A               &kp E               &kp I               &sl SYM
-    &kp LSHFT           &kp X               &mo META            &kp J               &kp G               &kp W                                   &kp Z               &kp H               &kp DOT             &mo META            &kp K               &kp RSHFT
+    &kp LSHFT           &kp X               &mo META            &kp J               &kp G               &kp W                                   &kp Z               &kp H               &kp K               &mo META            &kp DOT             &kp RSHFT
                                                                                     &kp SPC             &trans                                  &trans              &kp SPC
             >;
         };
