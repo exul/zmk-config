@@ -40,7 +40,7 @@
             bindings = <
     &kp TAB             &kp B               &kp L               &kp D               &kp C               &kp V                                   &kp J               &kp Y               &kp O               &kp U               &kp Q               &kp SQT
     &sl SYM             &kp N               &kp R               &kp T               &kp S               &kp G                                   &kp P               &kp H               &kp A               &kp E               &kp I               &sl SYM
-    &kp LSHFT           &kp X               &mo META            &kp M               &kp W               &kp Z                                   &kp Z               &kp H               &magic_key          &mo META            &kp DOT             &kp RSHFT
+    &kp LSHFT           &kp X               &mo META            &kp M               &kp W               &kp Z                                   &kp K               &kp F               &magic_key          &mo META            &kp DOT             &kp RSHFT
                                                                                     &kp SPC             &trans                                  &trans              &kp SPC
             >;
         };
