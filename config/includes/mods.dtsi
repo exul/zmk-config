@@ -10,7 +10,7 @@
             ak_d_y { trigger-keys = <D>; max-prior-idle-ms = <1000>; bindings = <&kp Y>; };
             ak_e_u { trigger-keys = <E>; max-prior-idle-ms = <1000>; bindings = <&kp U>; };
             ak_g_y { trigger-keys = <G>; max-prior-idle-ms = <1000>; bindings = <&kp Y>; };
-            ak_i_on { trigger-keys = <I>; max-prior-idle-ms = <1000>; bindings = <&kp O &kp N>; };
+            ak_i_sqw { trigger-keys = <I>; max-prior-idle-ms = <1000>; bindings = <&kp SQT>; };
             ak_l_k { trigger-keys = <L>; max-prior-idle-ms = <1000>; bindings = <&kp K>; };
             ak_m_ent { trigger-keys = <M>; max-prior-idle-ms = <1000>; bindings = <&kp E &kp N &kp T>; };
             ak_n_ion { trigger-keys = <N>; max-prior-idle-ms = <1000>; bindings = <&kp I &kp O &kp N>; };
