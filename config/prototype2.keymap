@@ -58,9 +58,9 @@
         meta_layer {
             label = "Meta";
             bindings = <
-    &trans              &trans              &trans              &trans              &kp BKSP            &trans                                  &trans              &kp BKSP            &trans              &trans              &trans              &trans
+    &tog META           &trans              &trans              &trans              &kp BKSP            &trans                                  &trans              &kp BKSP            &trans              &trans              &trans              &tog META
     &trans              &kp LGUI            &kp LALT            &kp RET             &kp LSHFT           &trans                                  &trans              &kp RSHFT           &kp ESC             &kp LALT            &kp RGUI            &trans
-    &trans              &trans              &tog META           &mo FUNC            &mo NAVNUM          &trans                                  &trans              &mo NAVNUM          &mo FUNC            &tog META           &trans              &trans
+    &trans              &trans              &trans              &mo FUNC            &mo NAVNUM          &trans                                  &trans              &mo NAVNUM          &mo FUNC            &trans              &trans              &trans
                                                                                     &trans              &trans                                  &trans              &trans
 	        >;
         };
